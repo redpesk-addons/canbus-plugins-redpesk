@@ -1,0 +1,115 @@
+{   "name": "gps",
+	"version": "2.0",
+	"extra_sources": [],
+	"initializers": [],
+	"loopers": [],
+	"buses": {},
+	"commands": [],
+	"messages": {
+		"0x123": {
+			"bus": "hs",
+			"is_fd" : false,
+			"is_j1939" : false,
+			"signals": {
+                "gps_longitude": {
+					"generic_name": "gps.simulateur.longitude",
+					"bit_position": 0,
+					"bit_size": 22,
+					"factor": 0.0001,
+					"offset": -180
+                },
+				"gps_latitude": {
+					"generic_name": "gps.simulateur.latitude",
+					"bit_position": 22,
+					"bit_size": 22,
+					"factor": 0.0001,
+					"offset": -90
+				},
+				"gps_speed": {
+					"generic_name": "gps.simulateur.speed",
+					"bit_position": 44,
+					"bit_size": 10,
+					"factor": 0.1,
+					"offset": 0
+				},
+				"gps_bearing": {
+					"generic_name": "gps.simulateur.bearing",
+					"bit_position": 54,
+					"bit_size": 10,
+					"factor": 0.5,
+					"offset": 0
+				}
+			}
+		},
+		"0x124": {
+			"bus": "hs",
+			"is_fd" : false,
+			"is_j1939" : false,
+			"signals": {
+                "gps_longitude": {
+					"generic_name": "gps.attack.longitude",
+					"bit_position": 0,
+					"bit_size": 22,
+					"factor": 0.0001,
+					"offset": -180
+                },
+				"gps_latitude": {
+					"generic_name": "gps.attack.latitude",
+					"bit_position": 22,
+					"bit_size": 22,
+					"factor": 0.0001,
+					"offset": -90
+				},
+				"gps_speed": {
+					"generic_name": "gps.attack.speed",
+					"bit_position": 44,
+					"bit_size": 10,
+					"factor": 0.1,
+					"offset": 0
+				},
+				"gps_bearing": {
+					"generic_name": "gps.attack.bearing",
+					"bit_position": 54,
+					"bit_size": 10,
+					"factor": 0.5,
+					"offset": 0
+				}
+			}
+		},
+		"0x125": {
+			"bus": "hs",
+			"is_fd" : false,
+			"is_j1939" : false,
+			"signals": {
+                "gps_longitude": {
+					"generic_name": "gps.accelero.longitude",
+					"bit_position": 0,
+					"bit_size": 22,
+					"factor": 0.0001,
+					"offset": -180
+                },
+				"gps_latitude": {
+					"generic_name": "gps.accelero.latitude",
+					"bit_position": 22,
+					"bit_size": 22,
+					"factor": 0.0001,
+					"offset": -90
+				},
+				"gps_speed": {
+					"generic_name": "gps.accelero.speed",
+					"bit_position": 44,
+					"bit_size": 10,
+					"factor": 0.1,
+					"offset": 0
+				},
+				"gps_bearing": {
+					"generic_name": "gps.accelero.bearing",
+					"bit_position": 54,
+					"bit_size": 10,
+					"factor": 0.5,
+					"offset": 0
+				}
+			}
+		}
+	}
+}

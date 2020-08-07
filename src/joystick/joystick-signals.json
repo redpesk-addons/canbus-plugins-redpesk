@@ -1,0 +1,49 @@
+{   "name": "example",
+	"version": "2.0",
+	"extra_sources": [],
+	"initializers": [],
+	"loopers": [],
+	"buses": {},
+	"commands": [],
+	"messages": {
+		"0x0F4003E7": {
+			"bus": "hs",
+			"is_fd" : false,
+			"is_j1939" : false,
+			"signals": {
+				"Joystick_button": {
+					"generic_name": "joystick.button",
+					"bit_position": 48,
+					"bit_size": 8,
+					"factor": 1,
+					"offset": 0,
+					"decoder": "decoder_t::decode_boolean"
+				},
+				"Joystick_axe_y": {
+					"generic_name": "joystick.axe.y",
+					"bit_position": 0,
+					"bit_size": 16,
+					"factor": 1,
+					"offset": 0,
+					"sign": 3
+				},
+				"Joystick_axe_x": {
+					"generic_name": "joystick.axe.x",
+					"bit_position": 16,
+					"bit_size": 16,
+					"factor": 1,
+					"offset": 0,
+					"sign": 3
+				},
+				"Joystick_rotate": {
+					"generic_name": "joystick.axe.z",
+					"bit_position": 32,
+					"bit_size": 16,
+					"factor": 1,
+					"offset": 0,
+					"sign": 3
+				}
+			}
+		}
+	}
+}
