@@ -1,0 +1,45 @@
+{
+	"$schema": "",
+	"metadata": {
+		"uid": "Low Can",
+		"version": "1.0",
+		"api": "low-can",
+		"info": "Low can Configuration"
+	},
+	"config": {
+		"active_message_set": 0,
+		"dev-mapping": {
+			"hs": "can0",
+			"ls": "can0",
+			"j1939": "can0"
+		},
+		"diagnostic_bus": "hs"
+	},
+	"plugins": [
+		{
+			"uid": "ARS408-signals",
+			"info": "ARS408 signals",
+			"libs": "ARS408-signals.ctlso"
+		},{
+			"uid": "canethernet-signals",
+			"info": "canethernet signals",
+			"libs": "canethernet-signals.ctlso"
+		},{
+			"uid": "gps-signals",
+			"info": "gps signals",
+			"libs": "gps-signals.ctlso"
+		},{
+			"uid": "j1939-signals",
+			"info": "j1939 signals",
+			"libs": "j1939-signals.ctlso"
+		},{
+			"uid": "joystick-signals",
+			"info": "joystick signals",
+			"libs": "joystick-signals.ctlso"
+		},{
+			"uid": "n2k-signals",
+			"info": "n2k signals",
+			"libs": "n2k-signals.ctlso"
+		}
+	]
+}

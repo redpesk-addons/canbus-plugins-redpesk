@@ -29,16 +29,4 @@ set(TARGET_NAME j1939-signals)
 		OUTPUT_NAME ${TARGET_NAME}
 	)
 
-	TARGET_INCLUDE_DIRECTORIES(${TARGET_NAME}
-		PUBLIC "/opt/AGL/include"
-	)
-
-	# Library dependencies (include updates automatically)
-	TARGET_LINK_LIBRARIES(${TARGET_NAME}
-		low-can
-		appcontroller
-		lua
-		afb-helpers
-	)
-
 set(TARGETS_LIST "${TARGETS_LIST};${TARGET_NAME}" CACHE INTERNAL "Enumarate targets" FORCE)

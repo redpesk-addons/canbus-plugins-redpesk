@@ -32,6 +32,4 @@ set(TARGET_NAME can-ethernet)
 		OUTPUT_NAME ${TARGET_NAME}
 	)
 
-	target_include_directories(${TARGET_NAME} PUBLIC /opt/AGL/include)
-
 set(TARGETS_LIST "${TARGETS_LIST};${TARGET_NAME}" CACHE INTERNAL "Enumarate targets" FORCE)

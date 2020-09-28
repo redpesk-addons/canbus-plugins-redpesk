@@ -1,6 +1,7 @@
 #include <low-can/binding/application.hpp>
 #include <low-can/can/can-decoder.hpp>
 #include <low-can/can/can-encoder.hpp>
+#include <ctl-config.h>
 
 extern "C" {
 CTLP_CAPI_REGISTER("gps");

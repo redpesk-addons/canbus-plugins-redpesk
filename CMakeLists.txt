@@ -27,8 +27,12 @@ set(PROJECT_LANGUAGES "C;CXX")
 
 project(${PROJECT_NAME} DESCRIPTION "Expose CAN Low Level APIs through AGL Framework")
 
+include(FindPkgConfig)
+include(GNUInstallDirs)
 include(CTest)
 enable_testing()
+
+set(CAN_LOW_LEVEL_BINDING_NAME "rp-can-low-level" CACHE STRING "Name of the CAN low level binding. Needed to install the config and plugin at the correct place")
 
 add_compile_definitions("AFB_BINDING_VERSION=3")
 
@@ -45,6 +49,13 @@ set(INSTALL_PREFIX $ENV{HOME}/opt)
 # -----------------------------
 list (APPEND link_libraries -pthread)
 
+add_subdirectory("etc")
+
+pkg_check_modules(lowcan REQUIRED rp-can-low-level)
+
+add_link_options(-L${lowcan_LIBDIR})
+link_libraries(low-can ${lowcan_LIBRARIES})
+
 file(GLOB plugin_dirs LIST_DIRECTORIES true src/*)
 
 set(TARGETS_LIST "" CACHE INTERNAL "Enumarate targets")
@@ -54,5 +65,15 @@ foreach(dir ${plugin_dirs})
 endforeach()
 
 foreach(target ${TARGETS_LIST})
-message("=== Including plugin '${target}'")
+get_target_property(pre ${target} PREFIX)
+get_target_property(out ${target} OUTPUT_NAME)
+get_target_property(suf ${target} SUFFIX)
+get_target_property(bdir ${target} BINARY_DIR)
+message("=== Including plugin: '${target}'")
+# Create the dedicated install targets
+add_custom_target(install_${target}
+COMMAND install -b -m644 ${bdir}/${pre}${out}${suf} ${CMAKE_INSTALL_PREFIX}/${CAN_LOW_LEVEL_BINDING_NAME}/lib/plugins
+COMMAND
+)
+add_dependencies(install_${target} ${target})
 endforeach()
