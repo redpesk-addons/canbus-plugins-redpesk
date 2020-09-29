@@ -16,7 +16,7 @@
 # limitations under the License.
 ###########################################################################
 
-set(TARGET_NAME simrad-draft-signals)
+set(TARGET_NAME j1939-signals)
 
 	# Define targets
 	ADD_LIBRARY(${TARGET_NAME} MODULE ${TARGET_NAME}.cpp)
@@ -32,33 +32,6 @@ set(TARGET_NAME simrad-draft-signals)
 	TARGET_INCLUDE_DIRECTORIES(${TARGET_NAME}
 		PUBLIC "/opt/AGL/include"
 	)
-
-	# Library dependencies (include updates automatically)
-	TARGET_LINK_LIBRARIES(${TARGET_NAME}
-		low-can
-		appcontroller
-		lua
-		afb-helpers
-	)
-
-set(TARGETS_LIST "${TARGETS_LIST};${TARGET_NAME}" CACHE INTERNAL "Enumarate targets" FORCE)
-
-set(TARGET_NAME n2k-basic-signals)
-
-	# Define targets
-	ADD_LIBRARY(${TARGET_NAME} MODULE ${TARGET_NAME}.cpp)
-
-	# Alsa Plugin properties
-	SET_TARGET_PROPERTIES(${TARGET_NAME} PROPERTIES
-		LABELS "PLUGIN"
-		PREFIX ""
-		SUFFIX ".ctlso"
-		OUTPUT_NAME ${TARGET_NAME}
-	)
-
-	TARGET_INCLUDE_DIRECTORIES(${TARGET_NAME}
-	PUBLIC "/opt/AGL/include"
-)
 
 	# Library dependencies (include updates automatically)
 	TARGET_LINK_LIBRARIES(${TARGET_NAME}

@@ -40,3 +40,5 @@ set(TARGET_NAME joystick-signals)
 		lua
 		afb-helpers
 	)
+
+set(TARGETS_LIST "${TARGETS_LIST};${TARGET_NAME}" CACHE INTERNAL "Enumarate targets" FORCE)
