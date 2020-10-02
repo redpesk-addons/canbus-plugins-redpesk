@@ -1,9 +1,8 @@
-#ifndef SIMRAD_HEADER_HPP
-#define SIMRAD_HEADER_HPP 1
-
 #include <low-can/utils/signals.hpp>
 #include <low-can/utils/openxc-utils.hpp>
+#include <low-can/can/message/j1939-message.hpp>
 #include <algorithm>
+
 class pgn_60416_BAM_t
 {
 private:
@@ -308,5 +307,3 @@ public:
     }
 };
 
-
-#endif
