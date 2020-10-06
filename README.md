@@ -263,20 +263,6 @@ decoders will be used. Available versions are v1 and v2, the latest being v2.
 * *`extra_sources`* <p> Set sources to be added to the top of the generated
 plugin. It can be your own c++ signal decoders for example.
 
-* *`initializers`* <p> Set an string array for the functions to be called at the
-beginning of the execution before any CAN message is read. Each string should
-be the name of a function with the type signature: 
-	```c++
-	void function(); 
-	```
-
-* *`loopers`* <p> Set an string array for the functions to be called each 
-time after reading and processing any CAN message. Each string should be the
-name of a function with the type signature:
-	```c++
-	void function();
-	``` 
-
 #### Message<p>
 
 The *`messages`* key is a object with fields mapping from CAN message IDs 
@@ -371,13 +357,6 @@ If true, will re-send even if the value hasn't changed.
 
 * *`force_send_changed (optional)`* <p>
 If true, regardless of the frequency, it will send the value if it has changed.
-
-* *`received (optional)`* <p>
-True if this signal has ever been received.
-
-* *`last_value (optional)`* <p>
-The last received value of the signal. If *`received`* is false, this value is
-undefined.
 
 * *`sign (optional)`* <p>
 If the data is signed it indicates the encode.
@@ -474,8 +453,6 @@ to be combined to make a composite signal that's more meaningful to developers.
 
 There is however a list of ready to use decoders provided by the low-can binding: 
 
-* handle_sign
-* parse_signal_bitfield
 * decode_state
 * decode_booleanl
 * decode_ignore
@@ -484,10 +461,6 @@ There is however a list of ready to use decoders provided by the low-can binding
 * decode_ascii
 * decode_date
 * decode_time
-* decode_60160
-* decode_60416
-* decode_fast_packet
-* translate_signal
 * decode_signal
 * decode_obd2_response
 
@@ -512,18 +485,12 @@ openxc_DynamicField decoder_t::decode_date(signal_t& signal, std::shared_ptr<mes
 }
 ```
 
-In this header you can also define the functions that will be called with the
-*`initializers`* and *`loopers`* functions or whatever customisation you want
-to add to the decode/encode process.
-
 #### Json Example <p>
 
 ```json
 {	"name": "NMEA2000",
 	"version" : "2.0",
 	"extra_sources": [],
-	"initializers": [],
-	"loopers": [],
 	"messages": {
 		"60160": {
 			"name": "Iso.Transport.Protocol.Data.Transfer",
