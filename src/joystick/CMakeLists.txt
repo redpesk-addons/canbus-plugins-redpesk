@@ -16,17 +16,3 @@
 # limitations under the License.
 ###########################################################################
 
-set(TARGET_NAME joystick-signals)
-
-	# Define targets
-	ADD_LIBRARY(${TARGET_NAME} MODULE ${TARGET_NAME}.cpp)
-
-	# Alsa Plugin properties
-	SET_TARGET_PROPERTIES(${TARGET_NAME} PROPERTIES
-		LABELS "PLUGIN"
-		PREFIX ""
-		SUFFIX ".ctlso"
-		OUTPUT_NAME ${TARGET_NAME}
-	)
-
-set(TARGETS_LIST "${TARGETS_LIST};${TARGET_NAME}" CACHE INTERNAL "Enumarate targets" FORCE)

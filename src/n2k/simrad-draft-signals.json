@@ -1,7 +1,7 @@
 
 {	"name": "NMEA2000",
     "version" : "2.0",
-	"extra_sources": ["simrad-header.cpp"],
+	"extra_sources": ["fastpacket-draft-headers.cpp"],
 	"initializers": [],
 	"loopers": [],
 	"buses": {},

@@ -74,7 +74,7 @@
 					"bit_position": 0,
 					"bit_size": 64,
 					"comment": "One signals",
-					"decoder": "decoder_t::decode_60160",
+					"decoder": "decode_60160",
 					"sign": 0,
 					"generic_name": "signal.60160"
 				}
@@ -343,7 +343,7 @@
 					"bit_position": 0,
 					"bit_size": 64,
 					"comment": "One signals",
-					"decoder": "decoder_t::decode_60416",
+					"decoder": "decode_60416",
 					"sign": 0,
 					"generic_name": "signal.60416"
 				}
