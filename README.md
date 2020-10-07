@@ -376,10 +376,9 @@ applied to the signal's value after the normal translation. See the
 Setting this to true on a signal will silence output of the signal. The VI
 will not monitor the signal nor store any of its values. This is useful if
 you are using a custom decoder for an entire message, want to silence the
-normal output of the signals it handles, and you don't need the VI to keep
-track of the values of any of the signals separately (in the lastValue field).
-If you need to use the previously stored values of any of the signals, you can
-use the ignoreDecoder as the decoder for the signal. Defaults to false.
+normal output of the signals it handles. If you need to use the previously
+stored values of any of the signals, you can use the ignoreDecoder as the
+decoder for the signal. Defaults to false.
 
 * *`enabled (optional)`* <p>
 Enable or disable all processing of a CAN signal. By default, a signal is
@@ -417,7 +416,7 @@ that all values will be processed, and there is no limit imposed by the
 firmware. If you want to make sure you don't miss a change in value even when
 dropping messages, see the force_send_changed attribute. You probably don't
 want to combine this attribute with send_same or else you risk missing a status
-change message if wasn't one of the messages the VI decided to let through.
+change message.
 Defauls to 0 (no limit).
 
 * *`send_same (optional)`* <p>
@@ -435,20 +434,41 @@ to false.
 
 * *`writable (optional)`* <p>
 Set this attribute to true to allow this signal to be written back to the CAN
-bus by an application. OpenXC JSON-formatted messages sent back to the VI that
-are writable are translated back into raw CAN messages and written to the bus.
-By default, the value will be interpreted as a floating point number. Defaults
-to false.
+bus by an application. By default, the value will be interpreted as a floating
+point number. Defaults to false.
 
 * *`encoder (optional)`* <p>
 You can specify a custom function here to encode the value for a CAN messages.
+
+#### Diagnostic Messages
+
+The *`diagnostic_messages`* key is an array of objects describing a recurring diagnostic message request.
+
+The attributes of each diagnostic message object are:
+
+* *`bus`* <p>
+The name of one of the previously defined CAN buses where this message should be requested.
+* *`id`* <p>
+the arbitration ID for the request.
+* *`mode`* <p>
+The diagnostic request mode, e.g. Mode 1 for powertrain diagnostic requests.
+* *`frequency`* <p>
+The frequency in Hz to request this diagnostic message. The maximum allowed frequency is 10Hz.
+* *`pid (optional)`* <p>
+If the mode uses PIDs, the pid to request.
+* *`name (optional)`* <p>
+A human readable, string name for this request. If provided, the response will have a name field (much like a normal translated message) with this value in place of bus, id, mode and pid.
+* *`decoder (optional)`* <p>
+When using a name, you can also specify a custom decoder function to parse the payload. This field is the name of a function (that matches the DiagnosticResponseDecoder function prototype). When a decoder is specified, the decoded value will be returned in the value field in place of payload.
+* *`callback (optional)`* <p>
+This field is the name of a function (that matches the DiagnosticResponseCallback function prototype) that should be called every time a response is received to this request.
 
 #### Signal Decoder <a name="#SignalDecoder"></a><p>
 
 The default decoder for each signal is a simple passthrough, translating the
 signal's value from engineering units to something more usable (using the
 defined factor and offset). Some signals require additional processing that you
-may wish to do within the VI and not on the host device. Other signals may need
+may wish to do within the binding and not on the host device. Other signals may need
 to be combined to make a composite signal that's more meaningful to developers.
 
 There is however a list of ready to use decoders provided by the low-can binding: 
@@ -553,6 +573,12 @@ this command:
 can-config-generator -m you-mapping-file.json -o your-plugin-name.cpp
  ```
 
+### Add your plugin to the "builder"
+
+To build your plugin you'll have to use the plugin installer provided by the
+redpesk-can-low-level-plugins project. 
+
+To do so add your plugin to 
 
 ### Build
 
@@ -811,7 +837,7 @@ Plug your GPS to your hardware CAN bus or use `canplayer` to replay a set of CAN
 messages to send, ie:
 
 ```bash
-canplayer gps-record
+canplayer -I gps-record
 ```
 
 Then connect to your binding using the CLI utility provided with the `binder`
