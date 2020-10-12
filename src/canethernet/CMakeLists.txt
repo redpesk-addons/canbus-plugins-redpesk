@@ -15,3 +15,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 ###########################################################################
+#
+#set(TARGET_NAME can-ethernet)
+#
+#	# Define targets
+#	ADD_LIBRARY(${TARGET_NAME} MODULE ${TARGET_NAME}.c)
+#
+#	# Alsa Plugin properties
+#	SET_TARGET_PROPERTIES(${TARGET_NAME} PROPERTIES
+#		LABELS "PLUGIN"
+#		PREFIX ""
+#		SUFFIX ".ctlso"
+#		OUTPUT_NAME ${TARGET_NAME}
+#	)
+#
+#set(TARGETS_LIST "${TARGETS_LIST};${TARGET_NAME}" CACHE INTERNAL "Enumarate targets" FORCE)
+#
