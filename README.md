@@ -16,7 +16,7 @@ your system:
 - rp-libappcontroller
 - rp-libafb-helpers
 
-And the build tools:
+And the building tools:
 
 - cmake
 - gcc or clang
@@ -276,7 +276,7 @@ load. Here is an example selecting the `gps-signals` plugin:
         "$schema": "",
         "metadata": {
                 "uid": "Low Can",
-                "version": "1.0",
+                "version": "2.0",
                 "api": "low-can",
                 "info": "Low can Configuration"
         },
