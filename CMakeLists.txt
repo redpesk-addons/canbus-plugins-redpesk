@@ -38,7 +38,7 @@ add_compile_definitions("AFB_BINDING_VERSION=3")
 
 # Compilation Mode (DEBUG, RELEASE)
 # ----------------------------------
-set(CMAKE_BUILD_TYPE "DEBUG" CACHE STRING "Default Build variant chosen. (Overwritten by cli if given)")
+set(CMAKE_BUILD_TYPE "RELEASE" CACHE STRING "Default Build variant chosen. (Overwritten by cli if given)")
 
 # Prefix path where will be installed the files
 # Default: /usr/local (need root permission to write in)

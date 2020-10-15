@@ -217,7 +217,7 @@ public:
 std::vector<pgn_60416_BAM_t> stack_message_t::stack_60416_ = std::vector<pgn_60416_BAM_t>();
 std::vector<pgn_60160_t> stack_message_t::stack_60160_ = std::vector<pgn_60160_t>();
 
-openxc_DynamicField decoder_t::decode_60416(signal_t &signal, std::shared_ptr<message_t> message, bool *send)
+openxc_DynamicField decode_60416(signal_t &signal, std::shared_ptr<message_t> message, bool *send)
 {
     application_t *app = &application_t::instance();
     stack_message_t stack = stack_message_t::instance(app);
@@ -238,7 +238,7 @@ openxc_DynamicField decoder_t::decode_60416(signal_t &signal, std::shared_ptr<me
     return ret;
 }
 
-openxc_DynamicField decoder_t::decode_60160(signal_t &signal, std::shared_ptr<message_t> message, bool *send)
+openxc_DynamicField decode_60160(signal_t &signal, std::shared_ptr<message_t> message, bool *send)
 {
     application_t *app = &application_t::instance();
     stack_message_t stack = stack_message_t::instance(app);

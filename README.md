@@ -2,13 +2,13 @@
 
 You will find more advanced plugins in the repository using the CAN low level
 binding. This concern mainly ARS408 maritim Radar or handle the NMEA2000
-protocol by example.
+protocol for example.
 
 ## How to build
 
 ### Pre-requisites
 
-To build theses plugins you need the following development packages installed on
+To build these plugins you need the following development packages installed on
 your system:
 
 - rp-app-framework-binder
@@ -16,7 +16,7 @@ your system:
 - rp-libappcontroller
 - rp-libafb-helpers
 
-And the build tools:
+And the building tools:
 
 - cmake
 - gcc or clang
@@ -224,7 +224,7 @@ sudo apt-get install rp-can-low-level
 
 ### Build
 
-This project do not build anything by default. You have to select the plugin
+This project does not build anything by default. You have to select the plugin
 you want to build:
 
 ```bash
@@ -276,7 +276,7 @@ load. Here is an example selecting the `gps-signals` plugin:
         "$schema": "",
         "metadata": {
                 "uid": "Low Can",
-                "version": "1.0",
+                "version": "2.0",
                 "api": "low-can",
                 "info": "Low can Configuration"
         },
@@ -298,8 +298,8 @@ load. Here is an example selecting the `gps-signals` plugin:
 ```
 
 You also have to change the CAN *device* if you do not use the *can0* default
-one. Also make it correspond to your needs against the *json* configuration you
-used. Here about the gps-signals json definitions, we only need the **hs** bus.
+one. Also, make it correspond to your needs against the *json* configuration you
+used. Here for the gps-signals json definitions, we only need the **hs** bus.
 
 ### Setup CAN bus
 
@@ -311,8 +311,8 @@ Connected to the target, here is how to load the virtual CAN device driver and s
 modprobe vcan
 ip link add vcan0 type vcan
 ip link set vcan0 up
-You also can named your linux CAN device like you want and if you need name it can0 :
 ```
+You can also call your linux CAN device as you like, for example if you need to name it can0 :
 
 ```bash
 modprobe vcan
@@ -322,7 +322,7 @@ ip link set can0 up
 
 #### CAN device using the USB CAN adapter
 
-Using real connection to CAN bus of your car using the USB CAN adapter connected to the OBD2 connector.
+Use the real connection to CAN bus of your device using an USB CAN adapter.
 
 Once connected, launch dmesg command and search which device to use:
 
@@ -360,8 +360,7 @@ $ ip link show can0
     clock 16000000
 ```
 
-On a Rcar Gen3 board, you’ll have your CAN device as can1 because `can0` already
-exists as an embedded device.
+On a Rcar Gen3 board for example, you’ll have your CAN device as can1 because `can0` already exists as an embedded device.
 
 The instructions will be the same:
 
@@ -380,9 +379,10 @@ $ ip link show can1
 
 #### Rename an existing CAN device
 
-You can rename an existing CAN device using following command and doing so move
-an existing `can0` device to anything else and then use another device as `can0`
-. For a Rcar Gen3 board do the following by example:
+You can rename an existing CAN device using following command and thus move
+an existing `can0` device to anything else. You will then be able to use 
+another device as `can0`. For example, using a Rcar Gen3 board,
+do the following :
 
 ```bash
 sudo ip link set can0 down
@@ -390,7 +390,7 @@ sudo ip link set can0 name bsp-can0
 sudo ip link set bsp-can0 up
 ```
 
-Then connect your USB CAN device that will be named `can0` by default.
+Then connect your USB CAN device which will be named `can0` by default.
 
 ### Install and launch the binding
 
@@ -478,7 +478,7 @@ Plug your GPS to your hardware CAN bus or use `canplayer` to replay a set of CAN
 messages to send, ie:
 
 ```bash
-canplayer gps-record
+canplayer -I gps-record
 ```
 
 Then connect to your binding using the CLI utility provided with the `binder`

@@ -19,7 +19,16 @@
 set(TARGET_NAME gps-signals)
 
 	# Define targets
-	ADD_LIBRARY(${TARGET_NAME} MODULE ${TARGET_NAME}.cpp)
+	ADD_LIBRARY(${TARGET_NAME} MODULE )
+
+	# Create dedicated generate targets
+	find_program(ccg can-config-generator REQUIRED)
+	get_target_property(dir ${TARGET_NAME} SOURCE_DIR)
+	add_custom_command( COMMAND ${ccg} -m ${dir}/${TARGET_NAME}.json -o ${TARGET_NAME}.cpp
+						OUTPUT ${TARGET_NAME}.cpp
+					)
+	add_custom_target(generate_${TARGET_NAME} DEPENDS ${TARGET_NAME}.cpp)
+	target_sources(${TARGET_NAME} PRIVATE ${TARGET_NAME}.cpp)
 
 	# Alsa Plugin properties
 	SET_TARGET_PROPERTIES(${TARGET_NAME} PROPERTIES
