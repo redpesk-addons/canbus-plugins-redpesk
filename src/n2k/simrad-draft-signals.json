@@ -9,7 +9,7 @@
 	"messages": {
 		"130840": {
 			"name": "Simnet.Data.User.Group.Configuration",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Simnet: Data User Group Configuration",
 			"length": 8,
 			"is_fd": false,
@@ -47,7 +47,7 @@
 		},
 		"130845": {
 			"name": "Simnet.Compass.Heading.Offset",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Simnet: Compass Heading Offset",
 			"length": 14,
 			"is_fd": false,
@@ -140,7 +140,7 @@
 		},
 		"130845#1": {
 			"name": "Simnet.Compass.Local.Field",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Simnet: Compass Local Field",
 			"length": 14,
 			"is_fd": false,
@@ -233,7 +233,7 @@
 		},
 		"130845#2": {
 			"name": "Simnet.Compass.Field.Angle",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Simnet: Compass Field Angle",
 			"length": 14,
 			"is_fd": false,
@@ -325,7 +325,7 @@
 		},
 		"130845#3": {
 			"name": "Simnet.Parameter.Handle",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Simnet: Parameter Handle",
 			"length": 14,
 			"is_fd": false,
@@ -450,7 +450,7 @@
 		},
 		"130850": {
 			"name": "Simnet.Event.Command.Ap.Command",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Simnet: Event Command: AP command",
 			"length": 12,
 			"is_fd": false,
@@ -561,7 +561,7 @@
 		},
 		"130850#1": {
 			"name": "Simnet.Event.Command.Alarm",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Simnet: Event Command: Alarm?",
 			"length": 12,
 			"is_fd": false,
@@ -651,7 +651,7 @@
 		},
 		"130850#2": {
 			"name": "Simnet.Event.Command.Unknown",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Simnet: Event Command: Unknown",
 			"length": 12,
 			"is_fd": false,
