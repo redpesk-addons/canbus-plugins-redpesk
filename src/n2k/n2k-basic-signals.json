@@ -9,7 +9,7 @@
 	"messages": {
 		"60160": {
 			"name": "Iso.Transport.Protocol.Data.Transfer",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"ISO Transport Protocol, Data Transfer",
 			"length": 8,
 			"is_fd": false,
@@ -35,7 +35,7 @@
 		},
 		"60160#1": {
 			"name": "60160",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Abstract signals for 60160",
 			"length": 8,
 			"is_fd": false,
@@ -56,7 +56,7 @@
 		},
 		"60416": {
 			"name": "Iso.Transport.Protocol.Connection.Management.Request.To.Send",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"ISO Transport Protocol, Connection Management - Request To Send",
 			"length": 8,
 			"is_fd": false,
@@ -107,7 +107,7 @@
 		},
 		"60416#1": {
 			"name": "Iso.Transport.Protocol.Connection.Management.Clear.To.Send",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"ISO Transport Protocol, Connection Management - Clear To Send",
 			"length": 8,
 			"is_fd": false,
@@ -158,7 +158,7 @@
 		},
 		"60416#2": {
 			"name": "Iso.Transport.Protocol.Connection.Management.End.Of.Message",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"ISO Transport Protocol, Connection Management - End Of Message",
 			"length": 8,
 			"is_fd": false,
@@ -209,7 +209,7 @@
 		},
 		"60416#3": {
 			"name": "Iso.Transport.Protocol.Connection.Management.Broadcast.Announce",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"ISO Transport Protocol, Connection Management - Broadcast Announce",
 			"length": 8,
 			"is_fd": false,
@@ -260,7 +260,7 @@
 		},
 		"60416#4": {
 			"name": "Iso.Transport.Protocol.Connection.Management.Abort",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"ISO Transport Protocol, Connection Management - Abort",
 			"length": 8,
 			"is_fd": false,
@@ -304,7 +304,7 @@
 		},
 		"60416#5": {
 			"name": "60416",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Abstract signals for 60416",
 			"length": 8,
 			"is_fd": false,
@@ -325,7 +325,7 @@
 		},
 		"126992": {
 			"name": "System.Time",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"System Time",
 			"length": 8,
 			"is_fd": false,
@@ -387,7 +387,7 @@
 		},
 		"127237": {
 			"name": "Heading.Track.Control",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Heading/Track control",
 			"length": 21,
 			"is_fd": false,
@@ -582,7 +582,7 @@
 		},
 		"127245": {
 			"name": "Rudder",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Rudder",
 			"length": 8,
 			"is_fd": false,
@@ -631,7 +631,7 @@
 		},
 		"127250": {
 			"name": "Vessel.Heading",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Vessel Heading",
 			"length": 8,
 			"is_fd": false,
@@ -695,7 +695,7 @@
 		},
 		"127251": {
 			"name": "Rate.Of.Turn",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Rate of Turn",
 			"length": 5,
 			"is_fd": false,
@@ -722,7 +722,7 @@
 		},
 		"127258": {
 			"name": "Magnetic.Variation",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Magnetic Variation",
 			"length": 6,
 			"is_fd": false,
@@ -785,7 +785,7 @@
 		},
 		"128259": {
 			"name": "Speed",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Speed",
 			"length": 6,
 			"is_fd": false,
@@ -840,7 +840,7 @@
 		},
 		"128267": {
 			"name": "Water.Depth",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Water Depth",
 			"length": 5,
 			"is_fd": false,
@@ -886,7 +886,7 @@
 		},
 		"128275": {
 			"name": "Distance.Log",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Distance Log",
 			"length": 14,
 			"is_fd": false,
@@ -935,7 +935,7 @@
 		},
 		"129025": {
 			"name": "Position.Rapid.Update",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Position, Rapid Update",
 			"length": 8,
 			"is_fd": false,
@@ -966,7 +966,7 @@
 		},
 		"129026": {
 			"name": "Cog.Sog.Rapid.Update",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"COG & SOG, Rapid Update",
 			"length": 8,
 			"is_fd": false,
@@ -1030,7 +1030,7 @@
 		},
 		"129029": {
 			"name": "Gnss.Position.Data",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"GNSS Position Data",
 			"length": 51,
 			"is_fd": false,
@@ -1224,7 +1224,7 @@
 		},
 		"129033": {
 			"name": "Time.Date",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Time & Date",
 			"length": 8,
 			"is_fd": false,
@@ -1267,7 +1267,7 @@
 		},
 		"129038": {
 			"name": "Ais.Class.APosition.Report",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"AIS Class A Position Report",
 			"length": 28,
 			"is_fd": false,
@@ -1483,7 +1483,7 @@
 		},
 		"129039": {
 			"name": "Ais.Class.BPosition.Report",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"AIS Class B Position Report",
 			"length": 26,
 			"is_fd": false,
@@ -1723,7 +1723,7 @@
 		},
 		"129040": {
 			"name": "Ais.Class.BExtended.Position.Report",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"AIS Class B Extended Position Report",
 			"length": 33,
 			"is_fd": false,
@@ -2021,7 +2021,7 @@
 		},
 		"129044": {
 			"name": "Datum",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Datum",
 			"length": 24,
 			"is_fd": false,
@@ -2076,7 +2076,7 @@
 		},
 		"129283": {
 			"name": "Cross.Track.Error",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Cross Track Error",
 			"length": 6,
 			"is_fd": false,
@@ -2138,7 +2138,7 @@
 		},
 		"129284": {
 			"name": "Navigation.Data",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Navigation Data",
 			"length": 34,
 			"is_fd": false,
@@ -2289,7 +2289,7 @@
 		},
 		"129291": {
 			"name": "Set.Drift.Rapid.Update",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Set & Drift, Rapid Update",
 			"length": 8,
 			"is_fd": false,
@@ -2345,7 +2345,7 @@
 		},
 		"129539": {
 			"name": "Gnss.Dops",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"GNSS DOPs",
 			"length": 8,
 			"is_fd": false,
@@ -2428,7 +2428,7 @@
 		},
 		"129540": {
 			"name": "Gnss.Sats.In.View",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"GNSS Sats in View",
 			"length": 255,
 			"is_fd": false,
@@ -2530,7 +2530,7 @@
 		},
 		"129793": {
 			"name": "Ais.Utc.And.Date.Report",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"AIS UTC and Date Report",
 			"length": 26,
 			"is_fd": false,
@@ -2695,7 +2695,7 @@
 		},
 		"129794": {
 			"name": "Ais.Class.AStatic.And.Voyage.Related.Data",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"AIS Class A Static and Voyage Related Data",
 			"length": 24,
 			"is_fd": false,
@@ -2944,7 +2944,7 @@
 		},
 		"129798": {
 			"name": "Ais.Sar.Aircraft.Position.Report",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"AIS SAR Aircraft Position Report",
 			"length": 8,
 			"is_fd": false,
@@ -3112,7 +3112,7 @@
 		},
 		"129809": {
 			"name": "Ais.Class.BStatic.Data.Msg24.Part.A",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"AIS Class B static data (msg 24 Part A)",
 			"length": 27,
 			"is_fd": false,
@@ -3191,7 +3191,7 @@
 		},
 		"129810": {
 			"name": "Ais.Class.BStatic.Data.Msg24.Part.B",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"AIS Class B static data (msg 24 Part B)",
 			"length": 34,
 			"is_fd": false,
@@ -3391,7 +3391,7 @@
 		},
 		"130306": {
 			"name": "Wind.Data",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Wind Data",
 			"length": 8,
 			"is_fd": false,
@@ -3447,7 +3447,7 @@
 		},
 		"130310": {
 			"name": "Environmental.Parameters",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Environmental Parameters",
 			"length": 8,
 			"is_fd": false,
@@ -3499,7 +3499,7 @@
 		},
 		"130311": {
 			"name": "Environmental.Parameters",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Environmental Parameters",
 			"length": 8,
 			"is_fd": false,
@@ -3578,7 +3578,7 @@
 		},
 		"130312": {
 			"name": "Temperature",
-			"bus":"j1939",
+			"bus":"hs",
 			"comment":"Temperature",
 			"length": 8,
 			"is_fd": false,

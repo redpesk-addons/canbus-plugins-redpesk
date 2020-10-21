@@ -11,7 +11,7 @@
 			"comment": "Electronic Transmission Controller 1",
 			"length": 8,
 			"name": "ETC1",
-			"bus" : "j1939",
+			"bus" : "hs",
 			"is_fd" : false,
 			"is_j1939" : true,
 			"signals" : {
@@ -187,7 +187,7 @@
 			"comment": "Electronic Engine Controller 1",
 			"length": 8,
 			"name": "EEC1",
-			"bus" : "j1939",
+			"bus" : "hs",
 			"is_fd" : false,
 			"is_j1939" : true,
 			"signals" : {
@@ -318,7 +318,7 @@
 			"comment": "Engine Hours, Revolutions",
 			"length": 8,
 			"name": "HOURS",
-			"bus" : "j1939",
+			"bus" : "hs",
 			"is_fd" : false,
 			"is_j1939" : true,
 			"signals" : {
@@ -350,7 +350,7 @@
 			"comment": "Vehicle Dynamic Stability Control 2",
 			"length": 8,
 			"name": "VDC2",
-			"bus" : "j1939",
+			"bus" : "hs",
 			"is_fd" : false,
 			"is_j1939" : true,
 			"signals" : {
@@ -431,7 +431,7 @@
 			"comment": "Wheel Speed Information",
 			"length": 8,
 			"name": "EBC2",
-			"bus" : "j1939",
+			"bus" : "hs",
 			"is_fd" : false,
 			"is_j1939" : true,
 			"signals" : {
@@ -518,7 +518,7 @@
 			"comment": "Engine Temperature 1",
 			"length": 8,
 			"name": "ET1",
-			"bus" : "j1939",
+			"bus" : "hs",
 			"is_fd" : false,
 			"is_j1939" : true,
 			"signals" : {

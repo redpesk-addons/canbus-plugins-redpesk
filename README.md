@@ -152,15 +152,21 @@ sudo make install
 Finally, get the CAN low level binding and install it:
 
 ```bash
-J1939_PRESENT=$([ "$(find /lib/modules/$(uname -r) -name "can-j1939.ko*")" ] && echo ON || echo OFF)
 git clone https://github.com/redpesk-common/rp-can-low-level.git
 cd rp-can-low-level
 mkdir build
 cd build
-cmake -DCMAKE_BUILD_TYPE=DEBUG -DWITH_FEATURE_J1939=${J1939_PRESENT} -DCMAKE_INSTALL_PREFIX=/usr/local ..
+cmake -DCMAKE_BUILD_TYPE=DEBUG  -DCMAKE_INSTALL_PREFIX=/usr/local ..
 make -j
 sudo make install
 ```
+
+You can specify if you want the j1939 and isotp enabled by add
+these options to you cmake command:
+
+-DWITH_FEATURE_J1939=ON/OFF
+and 
+-DWITH_FEATURE_ISOTP=ON/OFF
 
 #### From the distribution packages
 
