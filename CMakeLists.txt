@@ -52,6 +52,7 @@ list (APPEND link_libraries -pthread)
 add_subdirectory("etc")
 
 pkg_check_modules(lowcan REQUIRED rp-can-low-level)
+include_directories("${lowcan_INCLUDEDIR}")
 
 add_link_options(-L${lowcan_LIBDIR})
 link_libraries(low-can ${lowcan_LIBRARIES})
