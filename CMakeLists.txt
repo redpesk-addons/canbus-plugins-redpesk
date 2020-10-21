@@ -52,10 +52,21 @@ list (APPEND link_libraries -pthread)
 add_subdirectory("etc")
 
 pkg_check_modules(lowcan REQUIRED rp-can-low-level)
+pkg_check_modules(helpers REQUIRED afb-helpers)
+pkg_check_modules(controller REQUIRED appcontroller)
+
 include_directories("${lowcan_INCLUDEDIR}")
+include_directories("${helpers_INCLUDEDIR}")
+include_directories("${controller_INCLUDEDIR}")
 
 add_link_options(-L${lowcan_LIBDIR})
 link_libraries(low-can ${lowcan_LIBRARIES})
+
+add_link_options(-L${helpers_LIBDIR})
+link_libraries(low-can ${helpers_LIBRARIES})
+
+add_link_options(-L${controller_LIBDIR})
+link_libraries(low-can ${controller_LIBRARIES})
 
 file(GLOB plugin_dirs LIST_DIRECTORIES true src/*)
 
