@@ -84,7 +84,8 @@ get_target_property(bdir ${target} BINARY_DIR)
 message("=== Including plugin: '${target}'")
 # Create the dedicated install targets
 add_custom_target(install_${target}
-COMMAND install -m644 ${bdir}/${pre}${out}${suf} ${CMAKE_INSTALL_PREFIX}/${CAN_LOW_LEVEL_BINDING_NAME}/lib/plugins
+	COMMAND install -d \${DESTDIR}${CMAKE_INSTALL_PREFIX}/${CAN_LOW_LEVEL_BINDING_NAME}/lib/plugins
+	COMMAND install ${bdir}/${pre}${out}${suf} \${DESTDIR}${CMAKE_INSTALL_PREFIX}/${CAN_LOW_LEVEL_BINDING_NAME}/lib/plugins
 COMMAND
 )
 add_dependencies(install_${target} ${target})
