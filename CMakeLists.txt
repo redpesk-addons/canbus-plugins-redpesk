@@ -34,8 +34,6 @@ enable_testing()
 
 set(CAN_LOW_LEVEL_BINDING_NAME "rp-can-low-level" CACHE STRING "Name of the CAN low level binding. Needed to install the config and plugin at the correct place")
 
-add_compile_definitions("AFB_BINDING_VERSION=3")
-
 # Compilation Mode (DEBUG, RELEASE)
 # ----------------------------------
 set(CMAKE_BUILD_TYPE "RELEASE" CACHE STRING "Default Build variant chosen. (Overwritten by cli if given)")
@@ -77,6 +75,7 @@ foreach(dir ${plugin_dirs})
 endforeach()
 
 foreach(target ${TARGETS_LIST})
+	target_compile_definitions(${target} PRIVATE AFB_BINDING_VERSION=3)
 get_target_property(pre ${target} PREFIX)
 get_target_property(out ${target} OUTPUT_NAME)
 get_target_property(suf ${target} SUFFIX)
