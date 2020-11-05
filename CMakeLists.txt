@@ -57,14 +57,11 @@ include_directories("${lowcan_INCLUDEDIR}")
 include_directories("${helpers_INCLUDEDIR}")
 include_directories("${controller_INCLUDEDIR}")
 
-add_link_options(-L${lowcan_LIBDIR})
-link_libraries(low-can ${lowcan_LIBRARIES})
+link_libraries(low-can ${lowcan_LIBRARIES} -L${lowcan_LIBDIR})
 
-add_link_options(-L${helpers_LIBDIR})
-link_libraries(low-can ${helpers_LIBRARIES})
+link_libraries(low-can ${helpers_LIBRARIES} -L${helpers_LIBDIR})
 
-add_link_options(-L${controller_LIBDIR})
-link_libraries(low-can ${controller_LIBRARIES})
+link_libraries(low-can ${controller_LIBRARIES} -L${controller_LIBDIR})
 
 file(GLOB plugin_dirs LIST_DIRECTORIES true src/*)
 
@@ -76,16 +73,16 @@ endforeach()
 
 foreach(target ${TARGETS_LIST})
 	target_compile_definitions(${target} PRIVATE AFB_BINDING_VERSION=3)
-get_target_property(pre ${target} PREFIX)
-get_target_property(out ${target} OUTPUT_NAME)
-get_target_property(suf ${target} SUFFIX)
-get_target_property(bdir ${target} BINARY_DIR)
-message("=== Including plugin: '${target}'")
-# Create the dedicated install targets
-add_custom_target(install_${target}
-	COMMAND install -d \${DESTDIR}${CMAKE_INSTALL_PREFIX}/${CAN_LOW_LEVEL_BINDING_NAME}/lib/plugins
-	COMMAND install ${bdir}/${pre}${out}${suf} \${DESTDIR}${CMAKE_INSTALL_PREFIX}/${CAN_LOW_LEVEL_BINDING_NAME}/lib/plugins
-COMMAND
-)
-add_dependencies(install_${target} ${target})
+	get_target_property(pre ${target} PREFIX)
+	get_target_property(out ${target} OUTPUT_NAME)
+	get_target_property(suf ${target} SUFFIX)
+	get_target_property(bdir ${target} BINARY_DIR)
+	message("=== Including plugin: '${target}'")
+	# Create the dedicated install targets
+	add_custom_target(install_${target}
+		COMMAND install -d \${DESTDIR}${CMAKE_INSTALL_PREFIX}/${CAN_LOW_LEVEL_BINDING_NAME}/lib/plugins
+		COMMAND install ${bdir}/${pre}${out}${suf} \${DESTDIR}${CMAKE_INSTALL_PREFIX}/${CAN_LOW_LEVEL_BINDING_NAME}/lib/plugins
+		COMMAND
+	)
+	add_dependencies(install_${target} ${target})
 endforeach()
