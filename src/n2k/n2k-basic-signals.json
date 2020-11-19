@@ -368,7 +368,7 @@
 					"bit_size": 16,
 					"factor": 1,
 					"comment": "Days since January 1, 1970",
-					"decoder": "decoder_t::decode_date",
+					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"days",
 					"generic_name": "System.Time.Date"
@@ -378,7 +378,7 @@
 					"bit_size": 32,
 					"factor": 0.0001,
 					"comment": "Seconds since midnight",
-					"decoder": "decoder_t::decode_time",
+					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"s",
 					"generic_name": "System.Time.Time"
@@ -768,7 +768,7 @@
 					"bit_size": 16,
 					"factor": 1,
 					"comment": "Days since January 1, 1970",
-					"decoder": "decoder_t::decode_date",
+					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"days",
 					"generic_name": "Magnetic.Variation.Age.Of.Service"
@@ -900,7 +900,7 @@
 					"bit_size": 16,
 					"factor": 1,
 					"comment": "Timestamp of last reset in Days since January 1, 1970",
-					"decoder": "decoder_t::decode_date",
+					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"days",
 					"generic_name": "Distance.Log.Date"
@@ -910,7 +910,7 @@
 					"bit_size": 32,
 					"factor": 0.0001,
 					"comment": "Timestamp of last reset Seconds since midnight",
-					"decoder": "decoder_t::decode_time",
+					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"s",
 					"generic_name": "Distance.Log.Time"
@@ -1050,7 +1050,7 @@
 					"bit_size": 16,
 					"factor": 1,
 					"comment": "Days since January 1, 1970",
-					"decoder": "decoder_t::decode_date",
+					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"days",
 					"generic_name": "Gnss.Position.Data.Date"
@@ -1060,7 +1060,7 @@
 					"bit_size": 32,
 					"factor": 0.0001,
 					"comment": "Seconds since midnight",
-					"decoder": "decoder_t::decode_time",
+					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"s",
 					"generic_name": "Gnss.Position.Data.Time"
@@ -1238,7 +1238,7 @@
 					"bit_size": 16,
 					"factor": 1,
 					"comment": "Days since January 1, 1970",
-					"decoder": "decoder_t::decode_date",
+					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"days",
 					"generic_name": "Time.Date.Date"
@@ -1248,7 +1248,7 @@
 					"bit_size": 32,
 					"factor": 0.0001,
 					"comment": "Seconds since midnight",
-					"decoder": "decoder_t::decode_time",
+					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"s",
 					"generic_name": "Time.Date.Time"
@@ -2216,7 +2216,7 @@
 					"bit_size": 32,
 					"factor": 0.0001,
 					"comment": "Seconds since midnight",
-					"decoder": "decoder_t::decode_time",
+					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"s",
 					"generic_name": "Navigation.Data.Eta.Time"
@@ -2226,7 +2226,7 @@
 					"bit_size": 16,
 					"factor": 1,
 					"comment": "Days since January 1, 1970",
-					"decoder": "decoder_t::decode_date",
+					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"days",
 					"generic_name": "Navigation.Data.Eta.Date"
@@ -2620,7 +2620,7 @@
 					"bit_size": 32,
 					"factor": 0.0001,
 					"comment": "Seconds since midnight",
-					"decoder": "decoder_t::decode_time",
+					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"s",
 					"generic_name": "Ais.Utc.And.Date.Report.Position.Time"
@@ -2653,7 +2653,7 @@
 					"bit_size": 16,
 					"factor": 1,
 					"comment": "Days since January 1, 1970",
-					"decoder": "decoder_t::decode_date",
+					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"days",
 					"generic_name": "Ais.Utc.And.Date.Report.Position.Date"
@@ -2847,7 +2847,7 @@
 					"bit_size": 16,
 					"factor": 1,
 					"comment": "Days since January 1, 1970",
-					"decoder": "decoder_t::decode_date",
+					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"days",
 					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Eta.Date"
@@ -2857,7 +2857,7 @@
 					"bit_size": 32,
 					"factor": 0.0001,
 					"comment": "Seconds since midnight",
-					"decoder": "decoder_t::decode_time",
+					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"s",
 					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Eta.Time"

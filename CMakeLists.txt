@@ -34,8 +34,6 @@ enable_testing()
 
 set(CAN_LOW_LEVEL_BINDING_NAME "rp-can-low-level" CACHE STRING "Name of the CAN low level binding. Needed to install the config and plugin at the correct place")
 
-add_compile_definitions("AFB_BINDING_VERSION=3")
-
 # Compilation Mode (DEBUG, RELEASE)
 # ----------------------------------
 set(CMAKE_BUILD_TYPE "RELEASE" CACHE STRING "Default Build variant chosen. (Overwritten by cli if given)")
@@ -52,9 +50,18 @@ list (APPEND link_libraries -pthread)
 add_subdirectory("etc")
 
 pkg_check_modules(lowcan REQUIRED rp-can-low-level)
+pkg_check_modules(helpers REQUIRED afb-helpers)
+pkg_check_modules(controller REQUIRED appcontroller)
 
-add_link_options(-L${lowcan_LIBDIR})
-link_libraries(low-can ${lowcan_LIBRARIES})
+include_directories("${lowcan_INCLUDEDIR}")
+include_directories("${helpers_INCLUDEDIR}")
+include_directories("${controller_INCLUDEDIR}")
+
+link_libraries(low-can ${lowcan_LIBRARIES} -L${lowcan_LIBDIR})
+
+link_libraries(low-can ${helpers_LIBRARIES} -L${helpers_LIBDIR})
+
+link_libraries(low-can ${controller_LIBRARIES} -L${controller_LIBDIR})
 
 file(GLOB plugin_dirs LIST_DIRECTORIES true src/*)
 
@@ -65,15 +72,17 @@ foreach(dir ${plugin_dirs})
 endforeach()
 
 foreach(target ${TARGETS_LIST})
-get_target_property(pre ${target} PREFIX)
-get_target_property(out ${target} OUTPUT_NAME)
-get_target_property(suf ${target} SUFFIX)
-get_target_property(bdir ${target} BINARY_DIR)
-message("=== Including plugin: '${target}'")
-# Create the dedicated install targets
-add_custom_target(install_${target}
-COMMAND install -m644 ${bdir}/${pre}${out}${suf} ${CMAKE_INSTALL_PREFIX}/${CAN_LOW_LEVEL_BINDING_NAME}/lib/plugins
-COMMAND
-)
-add_dependencies(install_${target} ${target})
+	target_compile_definitions(${target} PRIVATE AFB_BINDING_VERSION=3)
+	get_target_property(pre ${target} PREFIX)
+	get_target_property(out ${target} OUTPUT_NAME)
+	get_target_property(suf ${target} SUFFIX)
+	get_target_property(bdir ${target} BINARY_DIR)
+	message("=== Including plugin: '${target}'")
+	# Create the dedicated install targets
+	add_custom_target(install_${target}
+		COMMAND install -d \${DESTDIR}${CMAKE_INSTALL_PREFIX}/${CAN_LOW_LEVEL_BINDING_NAME}/lib/plugins
+		COMMAND install ${bdir}/${pre}${out}${suf} \${DESTDIR}${CMAKE_INSTALL_PREFIX}/${CAN_LOW_LEVEL_BINDING_NAME}/lib/plugins
+		COMMAND
+	)
+	add_dependencies(install_${target} ${target})
 endforeach()
