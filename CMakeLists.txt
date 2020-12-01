@@ -49,7 +49,7 @@ list (APPEND link_libraries -pthread)
 
 add_subdirectory("etc")
 
-pkg_check_modules(lowcan REQUIRED rp-can-low-level)
+pkg_check_modules(lowcan REQUIRED canbus-binding)
 pkg_check_modules(helpers REQUIRED afb-helpers)
 pkg_check_modules(controller REQUIRED appcontroller)
 
