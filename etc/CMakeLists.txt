@@ -19,4 +19,4 @@
 ##################################################
 # Control Policy Config file
 ##################################################
-install(FILES control-rp-can-low-level.json DESTINATION ${CMAKE_INSTALL_PREFIX}/${CAN_LOW_LEVEL_BINDING_NAME}/${CMAKE_INSTALL_SYSCONFDIR})
+install(FILES control-canbus-binding.json DESTINATION ${CMAKE_INSTALL_PREFIX}/${CAN_LOW_LEVEL_BINDING_NAME}/${CMAKE_INSTALL_SYSCONFDIR})
