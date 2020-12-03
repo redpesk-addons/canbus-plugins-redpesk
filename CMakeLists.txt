@@ -20,7 +20,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.3)
 
 # Project Info
 # ------------------
-set(PROJECT_NAME redpesk-can-low-level-plugins)
+set(PROJECT_NAME canbus-plugins-redpesk)
 set(PROJECT_AUTHOR "Romain Forlot")
 set(PROJECT_AUTHOR_MAIL "romain.forlot@iot.bzh")
 set(PROJECT_LANGUAGES "C;CXX")
@@ -32,7 +32,7 @@ include(GNUInstallDirs)
 include(CTest)
 enable_testing()
 
-set(CAN_LOW_LEVEL_BINDING_NAME "rp-can-low-level" CACHE STRING "Name of the CAN low level binding. Needed to install the config and plugin at the correct place")
+set(CAN_LOW_LEVEL_BINDING_NAME "canbus-binding" CACHE STRING "Name of the CAN low level binding. Needed to install the config and plugin at the correct place")
 
 # Compilation Mode (DEBUG, RELEASE)
 # ----------------------------------
@@ -57,11 +57,11 @@ include_directories("${lowcan_INCLUDEDIR}")
 include_directories("${helpers_INCLUDEDIR}")
 include_directories("${controller_INCLUDEDIR}")
 
-link_libraries(low-can ${lowcan_LIBRARIES} -L${lowcan_LIBDIR})
+link_libraries(canbus ${lowcan_LIBRARIES} -L${lowcan_LIBDIR})
 
-link_libraries(low-can ${helpers_LIBRARIES} -L${helpers_LIBDIR})
+link_libraries(${helpers_LIBRARIES} -L${helpers_LIBDIR})
 
-link_libraries(low-can ${controller_LIBRARIES} -L${controller_LIBDIR})
+link_libraries(${controller_LIBRARIES} -L${controller_LIBDIR})
 
 file(GLOB plugin_dirs LIST_DIRECTORIES true src/*)
 
