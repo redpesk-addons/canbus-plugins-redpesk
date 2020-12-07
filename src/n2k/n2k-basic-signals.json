@@ -3446,9 +3446,9 @@
 			}
 		},
 		"130310": {
-			"name": "Environmental.Parameters",
+			"name": "Environmental.130310.Parameters",
 			"bus":"hs",
-			"comment":"Environmental Parameters",
+			"comment":"Environmental Parameters for PGN 130310",
 			"length": 8,
 			"is_fd": false,
 			"is_extended": false,
@@ -3460,7 +3460,7 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Environmental.Parameters.Sid"
+					"generic_name": "Environmental.130310.Parameters.Sid"
 				},
 				"Water.Temperature": {
 					"bit_position": 8,
@@ -3469,7 +3469,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"K",
-					"generic_name": "Environmental.Parameters.Water.Temperature"
+					"generic_name": "Environmental.130310.Parameters.Water.Temperature"
 				},
 				"Outside.Ambient.Air.Temperature": {
 					"bit_position": 24,
@@ -3478,7 +3478,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"K",
-					"generic_name": "Environmental.Parameters.Outside.Ambient.Air.Temperature"
+					"generic_name": "Environmental.130310.Parameters.Outside.Ambient.Air.Temperature"
 				},
 				"Atmospheric.Pressure": {
 					"bit_position": 40,
@@ -3486,21 +3486,21 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"hPa",
-					"generic_name": "Environmental.Parameters.Atmospheric.Pressure"
+					"generic_name": "Environmental.130310.Parameters.Atmospheric.Pressure"
 				},
 				"Reserved": {
 					"bit_position": 56,
 					"bit_size": 8,
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Environmental.Parameters.Reserved"
+					"generic_name": "Environmental.130310.Parameters.Reserved"
 				}
 			}
 		},
 		"130311": {
-			"name": "Environmental.Parameters",
+			"name": "Environmental.130311.Parameters",
 			"bus":"hs",
-			"comment":"Environmental Parameters",
+			"comment":"Environmental Parameters for PGN 130311",
 			"length": 8,
 			"is_fd": false,
 			"is_extended": false,
@@ -3512,7 +3512,7 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Environmental.Parameters.Sid"
+					"generic_name": "Environmental.130311.Parameters.Sid"
 				},
 				"Temperature.Source": {
 					"bit_position": 8,
@@ -3536,7 +3536,7 @@
 						"Freezer Temperature": [13],
 						"Exhaust Gas Temperature": [14]
 					},
-					"generic_name": "Environmental.Parameters.Temperature.Source"
+					"generic_name": "Environmental.130311.Parameters.Temperature.Source"
 				},
 				"Humidity.Source": {
 					"bit_position": 14,
@@ -3547,7 +3547,7 @@
 						"Inside": [0],
 						"Outside": [1]
 					},
-					"generic_name": "Environmental.Parameters.Humidity.Source"
+					"generic_name": "Environmental.130311.Parameters.Humidity.Source"
 				},
 				"Temperature": {
 					"bit_position": 16,
@@ -3556,7 +3556,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"K",
-					"generic_name": "Environmental.Parameters.Temperature"
+					"generic_name": "Environmental.130311.Parameters.Temperature"
 				},
 				"Humidity": {
 					"bit_position": 32,
@@ -3564,7 +3564,7 @@
 					"factor": 0.004,
 					"sign": 2,
 					"unit":"%",
-					"generic_name": "Environmental.Parameters.Humidity"
+					"generic_name": "Environmental.130311.Parameters.Humidity"
 				},
 				"Atmospheric.Pressure": {
 					"bit_position": 48,
@@ -3572,7 +3572,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"hPa",
-					"generic_name": "Environmental.Parameters.Atmospheric.Pressure"
+					"generic_name": "Environmental.130311.Parameters.Atmospheric.Pressure"
 				}
 			}
 		},
