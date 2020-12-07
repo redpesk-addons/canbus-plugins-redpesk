@@ -50,8 +50,8 @@ list (APPEND link_libraries -pthread)
 add_subdirectory("etc")
 
 pkg_check_modules(lowcan REQUIRED canbus-binding)
-pkg_check_modules(helpers REQUIRED afb-helpers)
-pkg_check_modules(controller REQUIRED appcontroller)
+pkg_check_modules(helpers REQUIRED afb-libhelpers)
+pkg_check_modules(controller REQUIRED afb-libcontroller)
 
 include_directories("${lowcan_INCLUDEDIR}")
 include_directories("${helpers_INCLUDEDIR}")

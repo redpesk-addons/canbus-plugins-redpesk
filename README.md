@@ -128,7 +128,7 @@ Scanning dependencies of target tuto-app1
 $ sudo make install
 ```
 
-Do the same for the lib afb-helpers and appcontroller:
+Do the same for the lib afb-libhelpers and afb-libcontroller:
 
 ```bash
 git clone https://github.com/redpesk-common/afb-libhelpers.git
@@ -140,7 +140,7 @@ cd build
 cmake -DCMAKE_BUILD_TYPE=DEBUG ..
 make -j
 sudo make install
-# install appcontroller
+# install afb-libcontroller
 cd ../afb-libcontroller
 mkdir build
 cd build
