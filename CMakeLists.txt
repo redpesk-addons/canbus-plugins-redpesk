@@ -63,15 +63,15 @@ pkg_check_modules(lowcan REQUIRED canbus-binding)
 pkg_check_modules(helpers REQUIRED afb-libhelpers)
 pkg_check_modules(controller REQUIRED afb-libcontroller)
 
-include_directories("${lowcan_PREFIX}/include")
-include_directories("${helpers_PREFIX}/include")
-include_directories("${controller_PREFIX}/include")
+include_directories("${lowcan_INCLUDEDIR}")
+include_directories("${helpers_INCLUDEDIR}")
+include_directories("${controller_INCLUDEDIR}")
 
-link_libraries(canbus ${lowcan_LDFLAGS})
+link_libraries(canbus ${lowcan_LIBRARIES} -L${lowcan_LIBDIR})
 
-link_libraries(${helpers_LDFLAGS})
+link_libraries(${helpers_LIBRARIES} -L${helpers_LIBDIR})
 
-link_libraries(${controller_LDFLAGS})
+link_libraries(${controller_LIBRARIES} -L${controller_LIBDIR})
 
 file(GLOB plugin_dirs LIST_DIRECTORIES true src/*)
 
