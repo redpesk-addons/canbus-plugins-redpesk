@@ -1,5 +1,5 @@
 
-{	"name": "NMEA2000",
+{	"name": "SIMRAD_DRAFT",
     "version" : "2.0",
 	"extra_sources": ["fastpacket-draft-headers.cpp"],
 	"initializers": [],
