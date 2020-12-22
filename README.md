@@ -165,7 +165,7 @@ You can specify if you want the j1939 and isotp enabled by add
 these options to you cmake command:
 
 -DWITH_FEATURE_J1939=ON/OFF
-and 
+and
 -DWITH_FEATURE_ISOTP=ON/OFF
 
 #### From the distribution packages
@@ -271,7 +271,6 @@ Scanning dependencies of target gps-signals
 
 ## How to use
 
-
 ### Adapt the canbus-binding configuration file
 
 Change the `control-canbus-binding.json` file by selecting the plugin(s) to
@@ -318,6 +317,7 @@ modprobe vcan
 ip link add vcan0 type vcan
 ip link set vcan0 up
 ```
+
 You can also call your linux CAN device as you like, for example if you need to name it can0 :
 
 ```bash
@@ -386,7 +386,7 @@ $ ip link show can1
 #### Rename an existing CAN device
 
 You can rename an existing CAN device using following command and thus move
-an existing `can0` device to anything else. You will then be able to use 
+an existing `can0` device to anything else. You will then be able to use
 another device as `can0`. For example, using a Rcar Gen3 board,
 do the following :
 
