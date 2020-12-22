@@ -1,0 +1,14 @@
+type: books
+books:
+-
+    id: redpesk-canbus-plugins
+    title: Redpesk canbus plugins
+    description: Redpesk canbus-binding documentation
+    keywords:
+    author: "IotBzh"
+    version: master
+    chapters:
+    - url: 1-Build.md
+      name: Build
+    - url: 2-Usage.md
+      name: Usage Guide
