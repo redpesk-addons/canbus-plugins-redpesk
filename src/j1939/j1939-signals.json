@@ -16,7 +16,7 @@
 			"is_j1939" : true,
 			"signals" : {
 				"Trns.Trque.Converter.Lockup.Engaged" : {
-					"generic_name": "Trns.Trque.Converter.Lockup.Engaged",
+					"name": "Trns.Trque.Converter.Lockup.Engaged",
 					"bit_position": 2,
 					"bit_size": 2,
 					"factor": 1,
@@ -33,7 +33,7 @@
 					}
 				},
 				"Trns.Trq.Cnvrtr.Lckp.Trnstn.In.Prcess" : {
-					"generic_name": "Trns.Trq.Cnvrtr.Lckp.Trnstn.In.Prcess",
+					"name": "Trns.Trq.Cnvrtr.Lckp.Trnstn.In.Prcess",
 					"bit_position": 6,
 					"bit_size": 2,
 					"factor": 1,
@@ -50,7 +50,7 @@
 					}
 				},
 				"Src.Addrss.Of.Ctrllng.Dvc.Fr.Trns.Cntrl" : {
-					"generic_name": "Src.Addrss.Of.Ctrllng.Dvc.Fr.Trns.Cntrl",
+					"name": "Src.Addrss.Of.Ctrllng.Dvc.Fr.Trns.Cntrl",
 					"bit_position": 56,
 					"bit_size": 8,
 					"factor": 1,
@@ -61,7 +61,7 @@
 					"writable" : true
 				},
 				"Momentary.Eng.Max.Power.Enable" : {
-					"generic_name": "Momentary.Eng.Max.Power.Enable",
+					"name": "Momentary.Eng.Max.Power.Enable",
 					"bit_position": 36,
 					"bit_size": 2,
 					"factor": 1,
@@ -78,7 +78,7 @@
 					}
 				},
 				"Trans.Input.Shaft.Speed" : {
-					"generic_name": "Trans.Input.Shaft.Speed",
+					"name": "Trans.Input.Shaft.Speed",
 					"bit_position": 40,
 					"bit_size": 16,
 					"factor": 0.125,
@@ -90,7 +90,7 @@
 					"writable" : true
 				},
 				"Progressive.Shift.Disable" : {
-					"generic_name": "Progressive.Shift.Disable",
+					"name": "Progressive.Shift.Disable",
 					"bit_position": 34,
 					"bit_size": 2,
 					"factor": 1,
@@ -107,7 +107,7 @@
 					}
 				},
 				"Eng.Momentary.Overspeed.Enable" : {
-					"generic_name": "Eng.Momentary.Overspeed.Enable",
+					"name": "Eng.Momentary.Overspeed.Enable",
 					"bit_position": 32,
 					"bit_size": 2,
 					"factor": 1,
@@ -124,7 +124,7 @@
 					}
 				},
 				"Percent.Clutch.Slip" : {
-					"generic_name": "Percent.Clutch.Slip",
+					"name": "Percent.Clutch.Slip",
 					"bit_position": 24,
 					"bit_size": 8,
 					"factor": 0.4,
@@ -136,7 +136,7 @@
 					"writable" : true
 				},
 				"Trans.Output.Shaft.Speed" : {
-					"generic_name": "Trans.Output.Shaft.Speed",
+					"name": "Trans.Output.Shaft.Speed",
 					"bit_position": 8,
 					"bit_size": 16,
 					"factor": 0.125,
@@ -148,7 +148,7 @@
 					"writable" : true
 				},
 				"Trans.Shift.In.Process" : {
-					"generic_name": "Trans.Shift.In.Process",
+					"name": "Trans.Shift.In.Process",
 					"bit_position": 4,
 					"bit_size": 2,
 					"factor": 1,
@@ -165,7 +165,7 @@
 					}
 				},
 				"Trans.Driveline.Engaged" : {
-					"generic_name": "Trans.Driveline.Engaged",
+					"name": "Trans.Driveline.Engaged",
 					"bit_position": 0,
 					"bit_size": 2,
 					"factor": 1,
@@ -192,7 +192,7 @@
 			"is_j1939" : true,
 			"signals" : {
 				"Src.AddrssOf.Ctrllng.Dvc.Fr.Eng.Cntrl" : {
-					"generic_name": "Src.AddrssOf.Ctrllng.Dvc.Fr.Eng.Cntrl",
+					"name": "Src.AddrssOf.Ctrllng.Dvc.Fr.Eng.Cntrl",
 					"bit_position": 40,
 					"bit_size": 8,
 					"factor": 1,
@@ -202,7 +202,7 @@
 					"sign": 0
 				},
 				"Actl.Eng.Prcnt.Trque.High.Resolution" : {
-					"generic_name": "Actl.Eng.Prcnt.Trque.High.Resolution",
+					"name": "Actl.Eng.Prcnt.Trque.High.Resolution",
 					"bit_position": 4,
 					"bit_size": 4,
 					"factor": 0.125,
@@ -219,7 +219,7 @@
 					}
 				},
 				"Eng.Demand.Percent.Torque" : {
-					"generic_name": "Eng.Demand.Percent.Torque",
+					"name": "Eng.Demand.Percent.Torque",
 					"bit_position": 56,
 					"bit_size": 8,
 					"factor": 1,
@@ -230,7 +230,7 @@
 					"sign": 0
 				},
 				"Eng.Starter.Mode" : {
-					"generic_name": "Eng.Starter.Mode",
+					"name": "Eng.Starter.Mode",
 					"bit_position": 48,
 					"bit_size": 4,
 					"factor": 1,
@@ -255,7 +255,7 @@
 					}
 				},
 				"Eng.Speed" : {
-					"generic_name": "Eng.Speed",
+					"name": "Eng.Speed",
 					"bit_position": 24,
 					"bit_size": 16,
 					"factor": 0.125,
@@ -266,7 +266,7 @@
 					"sign": 0
 				},
 				"Actual.Eng.Percent.Torque" : {
-					"generic_name": "Actual.Eng.Percent.Torque",
+					"name": "Actual.Eng.Percent.Torque",
 					"bit_position": 16,
 					"bit_size": 8,
 					"factor": 1,
@@ -277,7 +277,7 @@
 					"sign": 0
 				},
 				"Drivers.Demand.Eng.Percent.Torque" : {
-					"generic_name": "Drivers.Demand.Eng.Percent.Torque",
+					"name": "Drivers.Demand.Eng.Percent.Torque",
 					"bit_position": 8,
 					"bit_size": 8,
 					"factor": 1,
@@ -288,7 +288,7 @@
 					"sign": 0
 				},
 				"Eng.Torque.Mode" : {
-					"generic_name": "Eng.Torque.Mode",
+					"name": "Eng.Torque.Mode",
 					"bit_position": 0,
 					"bit_size": 4,
 					"factor": 1,
@@ -323,7 +323,7 @@
 			"is_j1939" : true,
 			"signals" : {
 				"Eng.Total.Revolutions" : {
-					"generic_name": "Eng.Total.Revolutions",
+					"name": "Eng.Total.Revolutions",
 					"bit_position": 32,
 					"bit_size": 32,
 					"factor": 1000,
@@ -334,7 +334,7 @@
 					"sign": 0
 				},
 				"Eng.Total.Hours.Of.Operation" : {
-					"generic_name": "Eng.Total.Hours.Of.Operation",
+					"name": "Eng.Total.Hours.Of.Operation",
 					"bit_position": 0,
 					"bit_size": 32,
 					"factor": 0.05,
@@ -355,7 +355,7 @@
 			"is_j1939" : true,
 			"signals" : {
 				"Steer.Wheel.Angle" : {
-					"generic_name": "Steer.Wheel.Angle",
+					"name": "Steer.Wheel.Angle",
 					"bit_position": 0,
 					"bit_size": 16,
 					"factor": 0.0009765625,
@@ -366,7 +366,7 @@
 					"sign": 0
 				},
 				"Longitudinal.Acceleration" : {
-					"generic_name": "Longitudinal.Acceleration",
+					"name": "Longitudinal.Acceleration",
 					"bit_position": 56,
 					"bit_size": 8,
 					"factor": 0.1,
@@ -377,7 +377,7 @@
 					"sign": 0
 				},
 				"Lateral.Acceleration" : {
-					"generic_name": "Lateral.Acceleration",
+					"name": "Lateral.Acceleration",
 					"bit_position": 40,
 					"bit_size": 16,
 					"factor": 0.00048828125,
@@ -388,7 +388,7 @@
 					"sign": 0
 				},
 				"Yaw.Rate" : {
-					"generic_name": "Yaw.Rate",
+					"name": "Yaw.Rate",
 					"bit_position": 24,
 					"bit_size": 16,
 					"factor": 0.0001220703125,
@@ -399,7 +399,7 @@
 					"sign": 0
 				},
 				"Steer.Wheel.Angle.Sensor.Type" : {
-					"generic_name": "Steer.Wheel.Angle.Sensor.Type",
+					"name": "Steer.Wheel.Angle.Sensor.Type",
 					"bit_position": 22,
 					"bit_size": 2,
 					"factor": 1,
@@ -415,7 +415,7 @@
 					}
 				},
 				"Steer.Wheel.Turn.Counter" : {
-					"generic_name": "Steer.Wheel.Turn.Counter",
+					"name": "Steer.Wheel.Turn.Counter",
 					"bit_position": 16,
 					"bit_size": 6,
 					"factor": 1,
@@ -436,7 +436,7 @@
 			"is_j1939" : true,
 			"signals" : {
 				"Rlative.Speed.Rear.Axle2.Right.Wheel" : {
-					"generic_name": "Rlative.Speed.Rear.Axle2.Right.Wheel",
+					"name": "Rlative.Speed.Rear.Axle2.Right.Wheel",
 					"bit_position": 56,
 					"bit_size": 8,
 					"factor": 0.0625,
@@ -447,7 +447,7 @@
 					"sign": 0
 				},
 				"Relative.Speed.Rear.Axle2.Left.Wheel" : {
-					"generic_name": "Relative.Speed.Rear.Axle2.Left.Wheel",
+					"name": "Relative.Speed.Rear.Axle2.Left.Wheel",
 					"bit_position": 48,
 					"bit_size": 8,
 					"factor": 0.0625,
@@ -458,7 +458,7 @@
 					"sign": 0
 				},
 				"Rlative.Speed.Rear.Axle1.Right.Wheel" : {
-					"generic_name": "Rlative.Speed.Rear.Axle1.Right.Wheel",
+					"name": "Rlative.Speed.Rear.Axle1.Right.Wheel",
 					"bit_position": 40,
 					"bit_size": 8,
 					"factor": 0.0625,
@@ -469,7 +469,7 @@
 					"sign": 0
 				},
 				"Relative.Speed.Rear.Axle1.Left.Wheel" : {
-					"generic_name": "Relative.Speed.Rear.Axle1.Left.Wheel",
+					"name": "Relative.Speed.Rear.Axle1.Left.Wheel",
 					"bit_position": 32,
 					"bit_size": 8,
 					"factor": 0.0625,
@@ -480,7 +480,7 @@
 					"sign": 0
 				},
 				"Rlative.Speed.Front.Axle.Right.Wheel" : {
-					"generic_name": "Rlative.Speed.Front.Axle.Right.Wheel",
+					"name": "Rlative.Speed.Front.Axle.Right.Wheel",
 					"bit_position": 24,
 					"bit_size": 8,
 					"factor": 0.0625,
@@ -491,7 +491,7 @@
 					"sign": 0
 				},
 				"Relative.Speed.Front.Axle.Left.Wheel" : {
-					"generic_name": "Relative.Speed.Front.Axle.Left.Wheel",
+					"name": "Relative.Speed.Front.Axle.Left.Wheel",
 					"bit_position": 16,
 					"bit_size": 8,
 					"factor": 0.0625,
@@ -502,7 +502,7 @@
 					"sign": 0
 				},
 				"Front.Axle.Speed" : {
-					"generic_name": "Front.Axle.Speed",
+					"name": "Front.Axle.Speed",
 					"bit_position": 0,
 					"bit_size": 16,
 					"factor": 0.00390625,
@@ -523,7 +523,7 @@
 			"is_j1939" : true,
 			"signals" : {
 				"Eng.Fuel.Temp1" : {
-					"generic_name": "Eng.Fuel.Temp1",
+					"name": "Eng.Fuel.Temp1",
 					"bit_position": 8,
 					"bit_size": 8,
 					"factor": 1,
@@ -534,7 +534,7 @@
 					"sign": 0
 				},
 				"Eng.Intercooler.Thermostat.Opening" : {
-					"generic_name": "Eng.Intercooler.Thermostat.Opening",
+					"name": "Eng.Intercooler.Thermostat.Opening",
 					"bit_position": 56,
 					"bit_size": 8,
 					"factor": 0.4,
@@ -545,7 +545,7 @@
 					"sign": 0
 				},
 				"Eng.Intercooler.Temp" : {
-					"generic_name": "Eng.Intercooler.Temp",
+					"name": "Eng.Intercooler.Temp",
 					"bit_position": 48,
 					"bit_size": 8,
 					"factor": 1,
@@ -556,7 +556,7 @@
 					"sign": 0
 				},
 				"Eng.Turbo.Oil.Temp" : {
-					"generic_name": "Eng.Turbo.Oil.Temp",
+					"name": "Eng.Turbo.Oil.Temp",
 					"bit_position": 32,
 					"bit_size": 16,
 					"factor": 0.03125,
@@ -567,7 +567,7 @@
 					"sign": 0
 				},
 				"Eng.Oil.Temp1" : {
-					"generic_name": "Eng.Oil.Temp1",
+					"name": "Eng.Oil.Temp1",
 					"bit_position": 16,
 					"bit_size": 16,
 					"factor": 0.03125,
@@ -578,7 +578,7 @@
 					"sign": 0
 				},
 				"Eng.Coolant.Temp" : {
-					"generic_name": "Eng.Coolant.Temp",
+					"name": "Eng.Coolant.Temp",
 					"bit_position": 0,
 					"bit_size": 8,
 					"factor": 0.03125,

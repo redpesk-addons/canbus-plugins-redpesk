@@ -25,14 +25,14 @@
 					"comment": "Simrad",
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
-					"generic_name": "Simnet.Data.User.Group.Configuration.Manufacturer.Code"
+					"name": "Simnet.Data.User.Group.Configuration.Manufacturer.Code"
 				},
 				"Reserved": {
 					"bit_position": 11,
 					"bit_size": 2,
 					"factor": 0,
 					"sign": 0,
-					"generic_name": "Simnet.Data.User.Group.Configuration.Reserved"
+					"name": "Simnet.Data.User.Group.Configuration.Reserved"
 				},
 				"Industry.Code": {
 					"bit_position": 13,
@@ -41,7 +41,7 @@
 					"comment": "Marine Industry",
 					"decoder": "decoder_t::decode_state",
 					"sign": 0,
-					"generic_name": "Simnet.Data.User.Group.Configuration.Industry.Code"
+					"name": "Simnet.Data.User.Group.Configuration.Industry.Code"
 				}
 			}
 		},
@@ -63,14 +63,14 @@
 					"comment": "Simrad",
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Heading.Offset.Manufacturer.Code"
+					"name": "Simnet.Compass.Heading.Offset.Manufacturer.Code"
 				},
 				"Reserved": {
 					"bit_position": 11,
 					"bit_size": 2,
 					"factor": 0,
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Heading.Offset.Reserved"
+					"name": "Simnet.Compass.Heading.Offset.Reserved"
 				},
 				"Industry.Code": {
 					"bit_position": 13,
@@ -79,13 +79,13 @@
 					"comment": "Marine Industry",
 					"decoder": "decoder_t::decode_state",
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Heading.Offset.Industry.Code"
+					"name": "Simnet.Compass.Heading.Offset.Industry.Code"
 				},
 				"Message.Id": {
 					"bit_position": 16,
 					"bit_size": 6,
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Heading.Offset.Message.Id"
+					"name": "Simnet.Compass.Heading.Offset.Message.Id"
 				},
 				"Repeat.Indicator": {
 					"bit_position": 22,
@@ -98,13 +98,13 @@
 						"Second retransmission": [2],
 						"Final retransmission": [3]
 					},
-					"generic_name": "Simnet.Compass.Heading.Offset.Repeat.Indicator"
+					"name": "Simnet.Compass.Heading.Offset.Repeat.Indicator"
 				},
 				"Unused": {
 					"bit_position": 24,
 					"bit_size": 24,
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Heading.Offset.Unused"
+					"name": "Simnet.Compass.Heading.Offset.Unused"
 				},
 				"Type": {
 					"bit_position": 48,
@@ -112,14 +112,14 @@
 					"value_to_match": 0,
 					"comment": "Heading Offset",
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Heading.Offset.Type"
+					"name": "Simnet.Compass.Heading.Offset.Type"
 				},
 				"A": {
 					"bit_position": 64,
 					"bit_size": 16,
 					"factor": 0,
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Heading.Offset.A"
+					"name": "Simnet.Compass.Heading.Offset.A"
 				},
 				"Angle": {
 					"bit_position": 80,
@@ -127,14 +127,14 @@
 					"factor": 0.0001,
 					"sign": 2,
 					"unit":"rad",
-					"generic_name": "Simnet.Compass.Heading.Offset.Angle"
+					"name": "Simnet.Compass.Heading.Offset.Angle"
 				},
 				"Unused": {
 					"bit_position": 96,
 					"bit_size": 16,
 					"factor": 0,
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Heading.Offset.Unused"
+					"name": "Simnet.Compass.Heading.Offset.Unused"
 				}
 			}
 		},
@@ -156,14 +156,14 @@
 					"comment": "Simrad",
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Local.Field.Manufacturer.Code"
+					"name": "Simnet.Compass.Local.Field.Manufacturer.Code"
 				},
 				"Reserved": {
 					"bit_position": 11,
 					"bit_size": 2,
 					"factor": 0,
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Local.Field.Reserved"
+					"name": "Simnet.Compass.Local.Field.Reserved"
 				},
 				"Industry.Code": {
 					"bit_position": 13,
@@ -172,13 +172,13 @@
 					"comment": "Marine Industry",
 					"decoder": "decoder_t::decode_state",
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Local.Field.Industry.Code"
+					"name": "Simnet.Compass.Local.Field.Industry.Code"
 				},
 				"Message.Id": {
 					"bit_position": 16,
 					"bit_size": 6,
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Local.Field.Message.Id"
+					"name": "Simnet.Compass.Local.Field.Message.Id"
 				},
 				"Repeat.Indicator": {
 					"bit_position": 22,
@@ -191,13 +191,13 @@
 						"Second retransmission": [2],
 						"Final retransmission": [3]
 					},
-					"generic_name": "Simnet.Compass.Local.Field.Repeat.Indicator"
+					"name": "Simnet.Compass.Local.Field.Repeat.Indicator"
 				},
 				"Unused": {
 					"bit_position": 24,
 					"bit_size": 24,
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Local.Field.Unused"
+					"name": "Simnet.Compass.Local.Field.Unused"
 				},
 				"Type": {
 					"bit_position": 48,
@@ -205,14 +205,14 @@
 					"value_to_match": 768,
 					"comment": "Local field",
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Local.Field.Type"
+					"name": "Simnet.Compass.Local.Field.Type"
 				},
 				"A": {
 					"bit_position": 64,
 					"bit_size": 16,
 					"factor": 0,
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Local.Field.A"
+					"name": "Simnet.Compass.Local.Field.A"
 				},
 				"Local.Field": {
 					"bit_position": 80,
@@ -220,14 +220,14 @@
 					"factor": 0.004,
 					"sign": 0,
 					"unit":"%",
-					"generic_name": "Simnet.Compass.Local.Field.Local.Field"
+					"name": "Simnet.Compass.Local.Field.Local.Field"
 				},
 				"Unused": {
 					"bit_position": 96,
 					"bit_size": 16,
 					"factor": 0,
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Local.Field.Unused"
+					"name": "Simnet.Compass.Local.Field.Unused"
 				}
 			}
 		},
@@ -249,14 +249,14 @@
 					"comment": "Simrad",
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Field.Angle.Manufacturer.Code"
+					"name": "Simnet.Compass.Field.Angle.Manufacturer.Code"
 				},
 				"Reserved": {
 					"bit_position": 11,
 					"bit_size": 2,
 					"factor": 0,
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Field.Angle.Reserved"
+					"name": "Simnet.Compass.Field.Angle.Reserved"
 				},
 				"Industry.Code": {
 					"bit_position": 13,
@@ -265,13 +265,13 @@
 					"comment": "Marine Industry",
 					"decoder": "decoder_t::decode_state",
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Field.Angle.Industry.Code"
+					"name": "Simnet.Compass.Field.Angle.Industry.Code"
 				},
 				"Message.Id": {
 					"bit_position": 16,
 					"bit_size": 6,
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Field.Angle.Message.Id"
+					"name": "Simnet.Compass.Field.Angle.Message.Id"
 				},
 				"Repeat.Indicator": {
 					"bit_position": 22,
@@ -284,13 +284,13 @@
 						"Second retransmission": [2],
 						"Final retransmission": [3]
 					},
-					"generic_name": "Simnet.Compass.Field.Angle.Repeat.Indicator"
+					"name": "Simnet.Compass.Field.Angle.Repeat.Indicator"
 				},
 				"Unused": {
 					"bit_position": 24,
 					"bit_size": 24,
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Field.Angle.Unused"
+					"name": "Simnet.Compass.Field.Angle.Unused"
 				},
 				"Type": {
 					"bit_position": 48,
@@ -298,13 +298,13 @@
 					"value_to_match": 1024,
 					"comment": "Local field",
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Field.Angle.Type"
+					"name": "Simnet.Compass.Field.Angle.Type"
 				},
 				"A": {
 					"bit_position": 64,
 					"bit_size": 16,
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Field.Angle.A"
+					"name": "Simnet.Compass.Field.Angle.A"
 				},
 				"Field.Angle": {
 					"bit_position": 80,
@@ -312,14 +312,14 @@
 					"factor": 0.0001,
 					"sign": 2,
 					"unit":"rad",
-					"generic_name": "Simnet.Compass.Field.Angle.Field.Angle"
+					"name": "Simnet.Compass.Field.Angle.Field.Angle"
 				},
 				"Unused": {
 					"bit_position": 96,
 					"bit_size": 16,
 					"factor": 0,
 					"sign": 0,
-					"generic_name": "Simnet.Compass.Field.Angle.Unused"
+					"name": "Simnet.Compass.Field.Angle.Unused"
 				}
 			}
 		},
@@ -341,14 +341,14 @@
 					"comment": "Simrad",
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
-					"generic_name": "Simnet.Parameter.Handle.Manufacturer.Code"
+					"name": "Simnet.Parameter.Handle.Manufacturer.Code"
 				},
 				"Reserved": {
 					"bit_position": 11,
 					"bit_size": 2,
 					"factor": 0,
 					"sign": 0,
-					"generic_name": "Simnet.Parameter.Handle.Reserved"
+					"name": "Simnet.Parameter.Handle.Reserved"
 				},
 				"Industry.Code": {
 					"bit_position": 13,
@@ -357,13 +357,13 @@
 					"comment": "Marine Industry",
 					"decoder": "decoder_t::decode_state",
 					"sign": 0,
-					"generic_name": "Simnet.Parameter.Handle.Industry.Code"
+					"name": "Simnet.Parameter.Handle.Industry.Code"
 				},
 				"Message.Id": {
 					"bit_position": 16,
 					"bit_size": 6,
 					"sign": 0,
-					"generic_name": "Simnet.Parameter.Handle.Message.Id"
+					"name": "Simnet.Parameter.Handle.Message.Id"
 				},
 				"Repeat.Indicator": {
 					"bit_position": 22,
@@ -376,49 +376,49 @@
 						"Second retransmission": [2],
 						"Final retransmission": [3]
 					},
-					"generic_name": "Simnet.Parameter.Handle.Repeat.Indicator"
+					"name": "Simnet.Parameter.Handle.Repeat.Indicator"
 				},
 				"D": {
 					"bit_position": 24,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Simnet.Parameter.Handle.D"
+					"name": "Simnet.Parameter.Handle.D"
 				},
 				"Group": {
 					"bit_position": 32,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Simnet.Parameter.Handle.Group"
+					"name": "Simnet.Parameter.Handle.Group"
 				},
 				"F": {
 					"bit_position": 40,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Simnet.Parameter.Handle.F"
+					"name": "Simnet.Parameter.Handle.F"
 				},
 				"G": {
 					"bit_position": 48,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Simnet.Parameter.Handle.G"
+					"name": "Simnet.Parameter.Handle.G"
 				},
 				"H": {
 					"bit_position": 56,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Simnet.Parameter.Handle.H"
+					"name": "Simnet.Parameter.Handle.H"
 				},
 				"I": {
 					"bit_position": 64,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Simnet.Parameter.Handle.I"
+					"name": "Simnet.Parameter.Handle.I"
 				},
 				"J": {
 					"bit_position": 72,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Simnet.Parameter.Handle.J"
+					"name": "Simnet.Parameter.Handle.J"
 				},
 				"Backlight": {
 					"bit_position": 80,
@@ -438,13 +438,13 @@
 						"Level 8": [88],
 						"Level 9": [99]
 					},
-					"generic_name": "Simnet.Parameter.Handle.Backlight"
+					"name": "Simnet.Parameter.Handle.Backlight"
 				},
 				"L": {
 					"bit_position": 88,
 					"bit_size": 16,
 					"sign": 0,
-					"generic_name": "Simnet.Parameter.Handle.L"
+					"name": "Simnet.Parameter.Handle.L"
 				}
 			}
 		},
@@ -466,14 +466,14 @@
 					"comment": "Simrad",
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Ap.Command.Manufacturer.Code"
+					"name": "Simnet.Event.Command.Ap.Command.Manufacturer.Code"
 				},
 				"Reserved": {
 					"bit_position": 11,
 					"bit_size": 2,
 					"factor": 0,
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Ap.Command.Reserved"
+					"name": "Simnet.Event.Command.Ap.Command.Reserved"
 				},
 				"Industry.Code": {
 					"bit_position": 13,
@@ -482,7 +482,7 @@
 					"comment": "Marine Industry",
 					"decoder": "decoder_t::decode_state",
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Ap.Command.Industry.Code"
+					"name": "Simnet.Event.Command.Ap.Command.Industry.Code"
 				},
 				"Proprietary.Id": {
 					"bit_position": 16,
@@ -492,20 +492,20 @@
 					"sign": 0,
 					"states": {
 					},
-					"generic_name": "Simnet.Event.Command.Ap.Command.Proprietary.Id"
+					"name": "Simnet.Event.Command.Ap.Command.Proprietary.Id"
 				},
 				"B": {
 					"bit_position": 24,
 					"bit_size": 16,
 					"factor": 0,
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Ap.Command.B"
+					"name": "Simnet.Event.Command.Ap.Command.B"
 				},
 				"Controlling.Device": {
 					"bit_position": 40,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Ap.Command.Controlling.Device"
+					"name": "Simnet.Event.Command.Ap.Command.Controlling.Device"
 				},
 				"Event": {
 					"bit_position": 48,
@@ -527,7 +527,7 @@
 						"Depth (Turn)": [24],
 						"Change Course": [26]
 					},
-					"generic_name": "Simnet.Event.Command.Ap.Command.Event"
+					"name": "Simnet.Event.Command.Ap.Command.Event"
 				},
 				"Direction": {
 					"bit_position": 64,
@@ -540,7 +540,7 @@
 						"Left rudder (port)": [4],
 						"Right rudder (starboard)": [5]
 					},
-					"generic_name": "Simnet.Event.Command.Ap.Command.Direction"
+					"name": "Simnet.Event.Command.Ap.Command.Direction"
 				},
 				"Angle": {
 					"bit_position": 72,
@@ -548,14 +548,14 @@
 					"factor": 0.0001,
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Simnet.Event.Command.Ap.Command.Angle"
+					"name": "Simnet.Event.Command.Ap.Command.Angle"
 				},
 				"G": {
 					"bit_position": 88,
 					"bit_size": 8,
 					"factor": 0,
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Ap.Command.G"
+					"name": "Simnet.Event.Command.Ap.Command.G"
 				}
 			}
 		},
@@ -577,14 +577,14 @@
 					"comment": "Simrad",
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Alarm.Manufacturer.Code"
+					"name": "Simnet.Event.Command.Alarm.Manufacturer.Code"
 				},
 				"Reserved": {
 					"bit_position": 11,
 					"bit_size": 2,
 					"factor": 0,
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Alarm.Reserved"
+					"name": "Simnet.Event.Command.Alarm.Reserved"
 				},
 				"Industry.Code": {
 					"bit_position": 13,
@@ -593,13 +593,13 @@
 					"comment": "Marine Industry",
 					"decoder": "decoder_t::decode_state",
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Alarm.Industry.Code"
+					"name": "Simnet.Event.Command.Alarm.Industry.Code"
 				},
 				"A": {
 					"bit_position": 16,
 					"bit_size": 16,
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Alarm.A"
+					"name": "Simnet.Event.Command.Alarm.A"
 				},
 				"Proprietary.Id": {
 					"bit_position": 32,
@@ -608,13 +608,13 @@
 					"comment": "Alarm command",
 					"decoder": "decoder_t::decode_state",
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Alarm.Proprietary.Id"
+					"name": "Simnet.Event.Command.Alarm.Proprietary.Id"
 				},
 				"C": {
 					"bit_position": 40,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Alarm.C"
+					"name": "Simnet.Event.Command.Alarm.C"
 				},
 				"Alarm": {
 					"bit_position": 48,
@@ -625,7 +625,7 @@
 						"Raise": [57],
 						"Clear": [56]
 					},
-					"generic_name": "Simnet.Event.Command.Alarm.Alarm"
+					"name": "Simnet.Event.Command.Alarm.Alarm"
 				},
 				"Message.Id": {
 					"bit_position": 64,
@@ -633,19 +633,19 @@
 					"factor": 1,
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Alarm.Message.Id"
+					"name": "Simnet.Event.Command.Alarm.Message.Id"
 				},
 				"F": {
 					"bit_position": 80,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Alarm.F"
+					"name": "Simnet.Event.Command.Alarm.F"
 				},
 				"G": {
 					"bit_position": 88,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Alarm.G"
+					"name": "Simnet.Event.Command.Alarm.G"
 				}
 			}
 		},
@@ -667,14 +667,14 @@
 					"comment": "Simrad",
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Unknown.Manufacturer.Code"
+					"name": "Simnet.Event.Command.Unknown.Manufacturer.Code"
 				},
 				"Reserved": {
 					"bit_position": 11,
 					"bit_size": 2,
 					"factor": 0,
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Unknown.Reserved"
+					"name": "Simnet.Event.Command.Unknown.Reserved"
 				},
 				"Industry.Code": {
 					"bit_position": 13,
@@ -683,13 +683,13 @@
 					"comment": "Marine Industry",
 					"decoder": "decoder_t::decode_state",
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Unknown.Industry.Code"
+					"name": "Simnet.Event.Command.Unknown.Industry.Code"
 				},
 				"A": {
 					"bit_position": 16,
 					"bit_size": 16,
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Unknown.A"
+					"name": "Simnet.Event.Command.Unknown.A"
 				},
 				"Proprietary.Id": {
 					"bit_position": 32,
@@ -698,31 +698,31 @@
 					"comment": "Alarm command",
 					"decoder": "decoder_t::decode_state",
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Unknown.Proprietary.Id"
+					"name": "Simnet.Event.Command.Unknown.Proprietary.Id"
 				},
 				"B": {
 					"bit_position": 40,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Unknown.B"
+					"name": "Simnet.Event.Command.Unknown.B"
 				},
 				"C": {
 					"bit_position": 48,
 					"bit_size": 16,
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Unknown.C"
+					"name": "Simnet.Event.Command.Unknown.C"
 				},
 				"D": {
 					"bit_position": 64,
 					"bit_size": 16,
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Unknown.D"
+					"name": "Simnet.Event.Command.Unknown.D"
 				},
 				"E": {
 					"bit_position": 80,
 					"bit_size": 16,
 					"sign": 0,
-					"generic_name": "Simnet.Event.Command.Unknown.E"
+					"name": "Simnet.Event.Command.Unknown.E"
 				}
 			}
 		}

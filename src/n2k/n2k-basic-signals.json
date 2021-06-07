@@ -22,14 +22,14 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Data.Transfer.Sid"
+					"name": "Iso.Transport.Protocol.Data.Transfer.Sid"
 				},
 				"Data": {
 					"bit_position": 8,
 					"bit_size": 56,
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Data.Transfer.Data"
+					"name": "Iso.Transport.Protocol.Data.Transfer.Data"
 				}
 			}
 		},
@@ -50,7 +50,7 @@
 					"comment": "One signals",
 					"decoder": "decode_60160",
 					"sign": 0,
-					"generic_name": "signal.60160"
+					"name": "signal.60160"
 				}
 			}
 		},
@@ -71,28 +71,28 @@
 					"value_to_match": 16,
 					"comment": "RTS",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.Request.To.Send.Group.Function.Code"
+					"name": "Iso.Transport.Protocol.Connection.Management.Request.To.Send.Group.Function.Code"
 				},
 				"Message.Size": {
 					"bit_position": 8,
 					"bit_size": 16,
 					"comment": "bytes",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.Request.To.Send.Message.Size"
+					"name": "Iso.Transport.Protocol.Connection.Management.Request.To.Send.Message.Size"
 				},
 				"Packets": {
 					"bit_position": 24,
 					"bit_size": 8,
 					"comment": "packets",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.Request.To.Send.Packets"
+					"name": "Iso.Transport.Protocol.Connection.Management.Request.To.Send.Packets"
 				},
 				"Packets.Reply": {
 					"bit_position": 32,
 					"bit_size": 8,
 					"comment": "packets sent in response to CTS",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.Request.To.Send.Packets.Reply"
+					"name": "Iso.Transport.Protocol.Connection.Management.Request.To.Send.Packets.Reply"
 				},
 				"Pgn": {
 					"bit_position": 40,
@@ -101,7 +101,7 @@
 					"comment": "PGN",
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.Request.To.Send.Pgn"
+					"name": "Iso.Transport.Protocol.Connection.Management.Request.To.Send.Pgn"
 				}
 			}
 		},
@@ -122,28 +122,28 @@
 					"value_to_match": 17,
 					"comment": "CTS",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.Clear.To.Send.Group.Function.Code"
+					"name": "Iso.Transport.Protocol.Connection.Management.Clear.To.Send.Group.Function.Code"
 				},
 				"Max.Packets": {
 					"bit_position": 8,
 					"bit_size": 8,
 					"comment": "packets before waiting for next CTS",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.Clear.To.Send.Max.Packets"
+					"name": "Iso.Transport.Protocol.Connection.Management.Clear.To.Send.Max.Packets"
 				},
 				"Next.Sid": {
 					"bit_position": 16,
 					"bit_size": 8,
 					"comment": "packet",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.Clear.To.Send.Next.Sid"
+					"name": "Iso.Transport.Protocol.Connection.Management.Clear.To.Send.Next.Sid"
 				},
 				"Reserved": {
 					"bit_position": 24,
 					"bit_size": 16,
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.Clear.To.Send.Reserved"
+					"name": "Iso.Transport.Protocol.Connection.Management.Clear.To.Send.Reserved"
 				},
 				"Pgn": {
 					"bit_position": 40,
@@ -152,7 +152,7 @@
 					"comment": "PGN",
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.Clear.To.Send.Pgn"
+					"name": "Iso.Transport.Protocol.Connection.Management.Clear.To.Send.Pgn"
 				}
 			}
 		},
@@ -173,28 +173,28 @@
 					"value_to_match": 19,
 					"comment": "EOM",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.End.Of.Message.Group.Function.Code"
+					"name": "Iso.Transport.Protocol.Connection.Management.End.Of.Message.Group.Function.Code"
 				},
 				"Total.Message.Size": {
 					"bit_position": 8,
 					"bit_size": 16,
 					"comment": "bytes",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.End.Of.Message.Total.Message.Size"
+					"name": "Iso.Transport.Protocol.Connection.Management.End.Of.Message.Total.Message.Size"
 				},
 				"Total.Number.Of.Packets.Received": {
 					"bit_position": 24,
 					"bit_size": 8,
 					"comment": "packets",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.End.Of.Message.Total.Number.Of.Packets.Received"
+					"name": "Iso.Transport.Protocol.Connection.Management.End.Of.Message.Total.Number.Of.Packets.Received"
 				},
 				"Reserved": {
 					"bit_position": 32,
 					"bit_size": 8,
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.End.Of.Message.Reserved"
+					"name": "Iso.Transport.Protocol.Connection.Management.End.Of.Message.Reserved"
 				},
 				"Pgn": {
 					"bit_position": 40,
@@ -203,7 +203,7 @@
 					"comment": "PGN",
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.End.Of.Message.Pgn"
+					"name": "Iso.Transport.Protocol.Connection.Management.End.Of.Message.Pgn"
 				}
 			}
 		},
@@ -224,28 +224,28 @@
 					"value_to_match": 32,
 					"comment": "BAM",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.Broadcast.Announce.Group.Function.Code"
+					"name": "Iso.Transport.Protocol.Connection.Management.Broadcast.Announce.Group.Function.Code"
 				},
 				"Message.Size": {
 					"bit_position": 8,
 					"bit_size": 16,
 					"comment": "bytes",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.Broadcast.Announce.Message.Size"
+					"name": "Iso.Transport.Protocol.Connection.Management.Broadcast.Announce.Message.Size"
 				},
 				"Packets": {
 					"bit_position": 24,
 					"bit_size": 8,
 					"comment": "frames",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.Broadcast.Announce.Packets"
+					"name": "Iso.Transport.Protocol.Connection.Management.Broadcast.Announce.Packets"
 				},
 				"Reserved": {
 					"bit_position": 32,
 					"bit_size": 8,
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.Broadcast.Announce.Reserved"
+					"name": "Iso.Transport.Protocol.Connection.Management.Broadcast.Announce.Reserved"
 				},
 				"Pgn": {
 					"bit_position": 40,
@@ -254,7 +254,7 @@
 					"comment": "PGN",
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.Broadcast.Announce.Pgn"
+					"name": "Iso.Transport.Protocol.Connection.Management.Broadcast.Announce.Pgn"
 				}
 			}
 		},
@@ -275,21 +275,21 @@
 					"value_to_match": 255,
 					"comment": "Abort",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.Abort.Group.Function.Code"
+					"name": "Iso.Transport.Protocol.Connection.Management.Abort.Group.Function.Code"
 				},
 				"Reason": {
 					"bit_position": 8,
 					"bit_size": 8,
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.Abort.Reason"
+					"name": "Iso.Transport.Protocol.Connection.Management.Abort.Reason"
 				},
 				"Reserved": {
 					"bit_position": 16,
 					"bit_size": 16,
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.Abort.Reserved"
+					"name": "Iso.Transport.Protocol.Connection.Management.Abort.Reserved"
 				},
 				"Pgn": {
 					"bit_position": 32,
@@ -298,7 +298,7 @@
 					"comment": "PGN",
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
-					"generic_name": "Iso.Transport.Protocol.Connection.Management.Abort.Pgn"
+					"name": "Iso.Transport.Protocol.Connection.Management.Abort.Pgn"
 				}
 			}
 		},
@@ -319,7 +319,7 @@
 					"comment": "One signals",
 					"decoder": "decode_60416",
 					"sign": 0,
-					"generic_name": "signal.60416"
+					"name": "signal.60416"
 				}
 			}
 		},
@@ -338,7 +338,7 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "System.Time.Sid"
+					"name": "System.Time.Sid"
 				},
 				"Source": {
 					"bit_position": 8,
@@ -353,7 +353,7 @@
 						"Local Rubidium clock": [4],
 						"Local Crystal clock": [5]
 					},
-					"generic_name": "System.Time.Source"
+					"name": "System.Time.Source"
 				},
 				"Reserved": {
 					"bit_position": 12,
@@ -361,7 +361,7 @@
 					"comment": "Reserved",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "System.Time.Reserved"
+					"name": "System.Time.Reserved"
 				},
 				"Date": {
 					"bit_position": 16,
@@ -371,7 +371,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"days",
-					"generic_name": "System.Time.Date"
+					"name": "System.Time.Date"
 				},
 				"Time": {
 					"bit_position": 32,
@@ -381,7 +381,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"s",
-					"generic_name": "System.Time.Time"
+					"name": "System.Time.Time"
 				}
 			}
 		},
@@ -407,7 +407,7 @@
 						"Error": [2],
 						"Unavailable": [3]
 					},
-					"generic_name": "Heading.Track.Control.Rudder.Limit.Exceeded"
+					"name": "Heading.Track.Control.Rudder.Limit.Exceeded"
 				},
 				"Off.Heading.Limit.Exceeded": {
 					"bit_position": 2,
@@ -420,7 +420,7 @@
 						"Error": [2],
 						"Unavailable": [3]
 					},
-					"generic_name": "Heading.Track.Control.Off.Heading.Limit.Exceeded"
+					"name": "Heading.Track.Control.Off.Heading.Limit.Exceeded"
 				},
 				"Off.Track.Limit.Exceeded": {
 					"bit_position": 4,
@@ -433,7 +433,7 @@
 						"Error": [2],
 						"Unavailable": [3]
 					},
-					"generic_name": "Heading.Track.Control.Off.Track.Limit.Exceeded"
+					"name": "Heading.Track.Control.Off.Track.Limit.Exceeded"
 				},
 				"Override": {
 					"bit_position": 6,
@@ -446,7 +446,7 @@
 						"Error": [2],
 						"Unavailable": [3]
 					},
-					"generic_name": "Heading.Track.Control.Override"
+					"name": "Heading.Track.Control.Override"
 				},
 				"Steering.Mode": {
 					"bit_position": 8,
@@ -461,7 +461,7 @@
 						"Heading Control": [4],
 						"Track Control": [5]
 					},
-					"generic_name": "Heading.Track.Control.Steering.Mode"
+					"name": "Heading.Track.Control.Steering.Mode"
 				},
 				"Turn.Mode": {
 					"bit_position": 11,
@@ -473,7 +473,7 @@
 						"turn rate controlled": [1],
 						"radius controlled": [2]
 					},
-					"generic_name": "Heading.Track.Control.Turn.Mode"
+					"name": "Heading.Track.Control.Turn.Mode"
 				},
 				"Heading.Reference": {
 					"bit_position": 14,
@@ -486,14 +486,14 @@
 						"Error": [2],
 						"Null": [3]
 					},
-					"generic_name": "Heading.Track.Control.Heading.Reference"
+					"name": "Heading.Track.Control.Heading.Reference"
 				},
 				"Reserved": {
 					"bit_position": 16,
 					"bit_size": 5,
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Heading.Track.Control.Reserved"
+					"name": "Heading.Track.Control.Reserved"
 				},
 				"Commanded.Rudder.Direction": {
 					"bit_position": 21,
@@ -505,7 +505,7 @@
 						"Move to starboard": [1],
 						"Move to port": [2]
 					},
-					"generic_name": "Heading.Track.Control.Commanded.Rudder.Direction"
+					"name": "Heading.Track.Control.Commanded.Rudder.Direction"
 				},
 				"Commanded.Rudder.Angle": {
 					"bit_position": 24,
@@ -513,7 +513,7 @@
 					"factor": 0.0001,
 					"sign": 2,
 					"unit":"rad",
-					"generic_name": "Heading.Track.Control.Commanded.Rudder.Angle"
+					"name": "Heading.Track.Control.Commanded.Rudder.Angle"
 				},
 				"Heading.To.Steer.Course": {
 					"bit_position": 40,
@@ -521,7 +521,7 @@
 					"factor": 0.0001,
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Heading.Track.Control.Heading.To.Steer.Course"
+					"name": "Heading.Track.Control.Heading.To.Steer.Course"
 				},
 				"Track": {
 					"bit_position": 56,
@@ -529,7 +529,7 @@
 					"factor": 0.0001,
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Heading.Track.Control.Track"
+					"name": "Heading.Track.Control.Track"
 				},
 				"Rudder.Limit": {
 					"bit_position": 72,
@@ -537,7 +537,7 @@
 					"factor": 0.0001,
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Heading.Track.Control.Rudder.Limit"
+					"name": "Heading.Track.Control.Rudder.Limit"
 				},
 				"Off.Heading.Limit": {
 					"bit_position": 88,
@@ -545,7 +545,7 @@
 					"factor": 0.0001,
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Heading.Track.Control.Off.Heading.Limit"
+					"name": "Heading.Track.Control.Off.Heading.Limit"
 				},
 				"Radius.Of.Turn.Order": {
 					"bit_position": 104,
@@ -553,7 +553,7 @@
 					"factor": 0.0001,
 					"sign": 2,
 					"unit":"rad",
-					"generic_name": "Heading.Track.Control.Radius.Of.Turn.Order"
+					"name": "Heading.Track.Control.Radius.Of.Turn.Order"
 				},
 				"Rate.Of.Turn.Order": {
 					"bit_position": 120,
@@ -561,14 +561,14 @@
 					"factor": 3.125e-05,
 					"sign": 2,
 					"unit":"rad/s",
-					"generic_name": "Heading.Track.Control.Rate.Of.Turn.Order"
+					"name": "Heading.Track.Control.Rate.Of.Turn.Order"
 				},
 				"Off.Track.Limit": {
 					"bit_position": 136,
 					"bit_size": 16,
 					"sign": 2,
 					"unit":"m",
-					"generic_name": "Heading.Track.Control.Off.Track.Limit"
+					"name": "Heading.Track.Control.Off.Track.Limit"
 				},
 				"Vessel.Heading": {
 					"bit_position": 152,
@@ -576,7 +576,7 @@
 					"factor": 0.0001,
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Heading.Track.Control.Vessel.Heading"
+					"name": "Heading.Track.Control.Vessel.Heading"
 				}
 			}
 		},
@@ -595,13 +595,13 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Rudder.Instance"
+					"name": "Rudder.Instance"
 				},
 				"Direction.Order": {
 					"bit_position": 8,
 					"bit_size": 2,
 					"sign": 0,
-					"generic_name": "Rudder.Direction.Order"
+					"name": "Rudder.Direction.Order"
 				},
 				"Reserved": {
 					"bit_position": 10,
@@ -609,7 +609,7 @@
 					"comment": "Reserved",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Rudder.Reserved"
+					"name": "Rudder.Reserved"
 				},
 				"Angle.Order": {
 					"bit_position": 16,
@@ -617,7 +617,7 @@
 					"factor": 0.0001,
 					"sign": 2,
 					"unit":"rad",
-					"generic_name": "Rudder.Angle.Order"
+					"name": "Rudder.Angle.Order"
 				},
 				"Position": {
 					"bit_position": 32,
@@ -625,7 +625,7 @@
 					"factor": 0.0001,
 					"sign": 2,
 					"unit":"rad",
-					"generic_name": "Rudder.Position"
+					"name": "Rudder.Position"
 				}
 			}
 		},
@@ -644,7 +644,7 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Vessel.Heading.Sid"
+					"name": "Vessel.Heading.Sid"
 				},
 				"Heading": {
 					"bit_position": 8,
@@ -652,7 +652,7 @@
 					"factor": 0.0001,
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Vessel.Heading.Heading"
+					"name": "Vessel.Heading.Heading"
 				},
 				"Deviation": {
 					"bit_position": 24,
@@ -660,7 +660,7 @@
 					"factor": 0.0001,
 					"sign": 2,
 					"unit":"rad",
-					"generic_name": "Vessel.Heading.Deviation"
+					"name": "Vessel.Heading.Deviation"
 				},
 				"Variation": {
 					"bit_position": 40,
@@ -668,7 +668,7 @@
 					"factor": 0.0001,
 					"sign": 2,
 					"unit":"rad",
-					"generic_name": "Vessel.Heading.Variation"
+					"name": "Vessel.Heading.Variation"
 				},
 				"Reference": {
 					"bit_position": 56,
@@ -681,7 +681,7 @@
 						"Error": [2],
 						"Null": [3]
 					},
-					"generic_name": "Vessel.Heading.Reference"
+					"name": "Vessel.Heading.Reference"
 				},
 				"Reserved": {
 					"bit_position": 58,
@@ -689,7 +689,7 @@
 					"comment": "Reserved",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Vessel.Heading.Reserved"
+					"name": "Vessel.Heading.Reserved"
 				}
 			}
 		},
@@ -708,7 +708,7 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Rate.Of.Turn.Sid"
+					"name": "Rate.Of.Turn.Sid"
 				},
 				"Rate": {
 					"bit_position": 8,
@@ -716,7 +716,7 @@
 					"factor": 3.125e-08,
 					"sign": 2,
 					"unit":"rad/s",
-					"generic_name": "Rate.Of.Turn.Rate"
+					"name": "Rate.Of.Turn.Rate"
 				}
 			}
 		},
@@ -735,7 +735,7 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Magnetic.Variation.Sid"
+					"name": "Magnetic.Variation.Sid"
 				},
 				"Source": {
 					"bit_position": 8,
@@ -753,7 +753,7 @@
 						"WMM 2015": [7],
 						"WMM 2020": [8]
 					},
-					"generic_name": "Magnetic.Variation.Source"
+					"name": "Magnetic.Variation.Source"
 				},
 				"Reserved": {
 					"bit_position": 12,
@@ -761,7 +761,7 @@
 					"comment": "Reserved",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Magnetic.Variation.Reserved"
+					"name": "Magnetic.Variation.Reserved"
 				},
 				"Age.Of.Service": {
 					"bit_position": 16,
@@ -771,7 +771,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"days",
-					"generic_name": "Magnetic.Variation.Age.Of.Service"
+					"name": "Magnetic.Variation.Age.Of.Service"
 				},
 				"Variation": {
 					"bit_position": 32,
@@ -779,7 +779,7 @@
 					"factor": 0.0001,
 					"sign": 2,
 					"unit":"rad",
-					"generic_name": "Magnetic.Variation.Variation"
+					"name": "Magnetic.Variation.Variation"
 				}
 			}
 		},
@@ -798,7 +798,7 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Speed.Sid"
+					"name": "Speed.Sid"
 				},
 				"Speed.Water.Referenced": {
 					"bit_position": 8,
@@ -806,7 +806,7 @@
 					"factor": 0.01,
 					"sign": 0,
 					"unit":"m/s",
-					"generic_name": "Speed.Speed.Water.Referenced"
+					"name": "Speed.Speed.Water.Referenced"
 				},
 				"Speed.Ground.Referenced": {
 					"bit_position": 24,
@@ -814,7 +814,7 @@
 					"factor": 0.01,
 					"sign": 0,
 					"unit":"m/s",
-					"generic_name": "Speed.Speed.Ground.Referenced"
+					"name": "Speed.Speed.Ground.Referenced"
 				},
 				"Speed.Water.Referenced.Type": {
 					"bit_position": 40,
@@ -828,13 +828,13 @@
 						"Correlation (ultra sound)": [3],
 						"Electro Magnetic": [4]
 					},
-					"generic_name": "Speed.Speed.Water.Referenced.Type"
+					"name": "Speed.Speed.Water.Referenced.Type"
 				},
 				"Speed.Direction": {
 					"bit_position": 48,
 					"bit_size": 4,
 					"sign": 0,
-					"generic_name": "Speed.Speed.Direction"
+					"name": "Speed.Speed.Direction"
 				}
 			}
 		},
@@ -853,7 +853,7 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Water.Depth.Sid"
+					"name": "Water.Depth.Sid"
 				},
 				"Depth": {
 					"bit_position": 8,
@@ -862,7 +862,7 @@
 					"comment": "Depth below transducer",
 					"sign": 0,
 					"unit":"m",
-					"generic_name": "Water.Depth.Depth"
+					"name": "Water.Depth.Depth"
 				},
 				"Offset": {
 					"bit_position": 40,
@@ -871,7 +871,7 @@
 					"comment": "Distance between transducer and surface (positive) or keel (negative)",
 					"sign": 2,
 					"unit":"m",
-					"generic_name": "Water.Depth.Offset"
+					"name": "Water.Depth.Offset"
 				},
 				"Range": {
 					"bit_position": 56,
@@ -880,7 +880,7 @@
 					"comment": "Max measurement range",
 					"sign": 0,
 					"unit":"m",
-					"generic_name": "Water.Depth.Range"
+					"name": "Water.Depth.Range"
 				}
 			}
 		},
@@ -903,7 +903,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"days",
-					"generic_name": "Distance.Log.Date"
+					"name": "Distance.Log.Date"
 				},
 				"Time": {
 					"bit_position": 16,
@@ -913,7 +913,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"s",
-					"generic_name": "Distance.Log.Time"
+					"name": "Distance.Log.Time"
 				},
 				"Log": {
 					"bit_position": 48,
@@ -921,7 +921,7 @@
 					"comment": "Total cumulative distance",
 					"sign": 0,
 					"unit":"m",
-					"generic_name": "Distance.Log.Log"
+					"name": "Distance.Log.Log"
 				},
 				"Trip.Log": {
 					"bit_position": 80,
@@ -929,7 +929,7 @@
 					"comment": "Distance since last reset",
 					"sign": 0,
 					"unit":"m",
-					"generic_name": "Distance.Log.Trip.Log"
+					"name": "Distance.Log.Trip.Log"
 				}
 			}
 		},
@@ -951,7 +951,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 2,
 					"unit":"deg",
-					"generic_name": "Position.Rapid.Update.Latitude"
+					"name": "Position.Rapid.Update.Latitude"
 				},
 				"Longitude": {
 					"bit_position": 32,
@@ -960,7 +960,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 2,
 					"unit":"deg",
-					"generic_name": "Position.Rapid.Update.Longitude"
+					"name": "Position.Rapid.Update.Longitude"
 				}
 			}
 		},
@@ -979,7 +979,7 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Cog.Sog.Rapid.Update.Sid"
+					"name": "Cog.Sog.Rapid.Update.Sid"
 				},
 				"Cog.Reference": {
 					"bit_position": 8,
@@ -992,7 +992,7 @@
 						"Error": [2],
 						"Null": [3]
 					},
-					"generic_name": "Cog.Sog.Rapid.Update.Cog.Reference"
+					"name": "Cog.Sog.Rapid.Update.Cog.Reference"
 				},
 				"Reserved": {
 					"bit_position": 10,
@@ -1000,7 +1000,7 @@
 					"comment": "Reserved",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Cog.Sog.Rapid.Update.Reserved"
+					"name": "Cog.Sog.Rapid.Update.Reserved"
 				},
 				"Cog": {
 					"bit_position": 16,
@@ -1008,7 +1008,7 @@
 					"factor": 0.0001,
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Cog.Sog.Rapid.Update.Cog"
+					"name": "Cog.Sog.Rapid.Update.Cog"
 				},
 				"Sog": {
 					"bit_position": 32,
@@ -1016,7 +1016,7 @@
 					"factor": 0.01,
 					"sign": 0,
 					"unit":"m/s",
-					"generic_name": "Cog.Sog.Rapid.Update.Sog"
+					"name": "Cog.Sog.Rapid.Update.Sog"
 				},
 				"Reserved": {
 					"bit_position": 48,
@@ -1024,7 +1024,7 @@
 					"comment": "Reserved",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Cog.Sog.Rapid.Update.Reserved"
+					"name": "Cog.Sog.Rapid.Update.Reserved"
 				}
 			}
 		},
@@ -1043,7 +1043,7 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Gnss.Position.Data.Sid"
+					"name": "Gnss.Position.Data.Sid"
 				},
 				"Date": {
 					"bit_position": 8,
@@ -1053,7 +1053,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"days",
-					"generic_name": "Gnss.Position.Data.Date"
+					"name": "Gnss.Position.Data.Date"
 				},
 				"Time": {
 					"bit_position": 24,
@@ -1063,7 +1063,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"s",
-					"generic_name": "Gnss.Position.Data.Time"
+					"name": "Gnss.Position.Data.Time"
 				},
 				"Latitude": {
 					"bit_position": 56,
@@ -1072,7 +1072,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 2,
 					"unit":"deg",
-					"generic_name": "Gnss.Position.Data.Latitude"
+					"name": "Gnss.Position.Data.Latitude"
 				},
 				"Longitude": {
 					"bit_position": 120,
@@ -1081,7 +1081,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 2,
 					"unit":"deg",
-					"generic_name": "Gnss.Position.Data.Longitude"
+					"name": "Gnss.Position.Data.Longitude"
 				},
 				"Altitude": {
 					"bit_position": 184,
@@ -1090,7 +1090,7 @@
 					"comment": "Altitude referenced to WGS-84",
 					"sign": 2,
 					"unit":"m",
-					"generic_name": "Gnss.Position.Data.Altitude"
+					"name": "Gnss.Position.Data.Altitude"
 				},
 				"Gnss.Type": {
 					"bit_position": 248,
@@ -1108,7 +1108,7 @@
 						"surveyed": [7],
 						"Galileo": [8]
 					},
-					"generic_name": "Gnss.Position.Data.Gnss.Type"
+					"name": "Gnss.Position.Data.Gnss.Type"
 				},
 				"Method": {
 					"bit_position": 252,
@@ -1126,7 +1126,7 @@
 						"Manual Input": [7],
 						"Simulate mode": [8]
 					},
-					"generic_name": "Gnss.Position.Data.Method"
+					"name": "Gnss.Position.Data.Method"
 				},
 				"Integrity": {
 					"bit_position": 256,
@@ -1138,7 +1138,7 @@
 						"Safe": [1],
 						"Caution": [2]
 					},
-					"generic_name": "Gnss.Position.Data.Integrity"
+					"name": "Gnss.Position.Data.Integrity"
 				},
 				"Reserved": {
 					"bit_position": 258,
@@ -1146,14 +1146,14 @@
 					"comment": "Reserved",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Gnss.Position.Data.Reserved"
+					"name": "Gnss.Position.Data.Reserved"
 				},
 				"Number.Of.Svs": {
 					"bit_position": 264,
 					"bit_size": 8,
 					"comment": "Number of satellites used in solution",
 					"sign": 0,
-					"generic_name": "Gnss.Position.Data.Number.Of.Svs"
+					"name": "Gnss.Position.Data.Number.Of.Svs"
 				},
 				"Hdop": {
 					"bit_position": 272,
@@ -1161,7 +1161,7 @@
 					"factor": 0.01,
 					"comment": "Horizontal dilution of precision",
 					"sign": 2,
-					"generic_name": "Gnss.Position.Data.Hdop"
+					"name": "Gnss.Position.Data.Hdop"
 				},
 				"Pdop": {
 					"bit_position": 288,
@@ -1169,7 +1169,7 @@
 					"factor": 0.01,
 					"comment": "Probable dilution of precision",
 					"sign": 2,
-					"generic_name": "Gnss.Position.Data.Pdop"
+					"name": "Gnss.Position.Data.Pdop"
 				},
 				"Geoidal.Separation": {
 					"bit_position": 304,
@@ -1178,14 +1178,14 @@
 					"comment": "Geoidal Separation",
 					"sign": 2,
 					"unit":"m",
-					"generic_name": "Gnss.Position.Data.Geoidal.Separation"
+					"name": "Gnss.Position.Data.Geoidal.Separation"
 				},
 				"Reference.Stations": {
 					"bit_position": 336,
 					"bit_size": 8,
 					"comment": "Number of reference stations",
 					"sign": 0,
-					"generic_name": "Gnss.Position.Data.Reference.Stations"
+					"name": "Gnss.Position.Data.Reference.Stations"
 				},
 				"Reference.Station.Type": {
 					"bit_position": 344,
@@ -1203,14 +1203,14 @@
 						"surveyed": [7],
 						"Galileo": [8]
 					},
-					"generic_name": "Gnss.Position.Data.Reference.Station.Type"
+					"name": "Gnss.Position.Data.Reference.Station.Type"
 				},
 				"Reference.Station.Id": {
 					"bit_position": 348,
 					"bit_size": 12,
 					"sign": 0,
 					"unit":"None",
-					"generic_name": "Gnss.Position.Data.Reference.Station.Id"
+					"name": "Gnss.Position.Data.Reference.Station.Id"
 				},
 				"Age.Of.Dgnss.Corrections": {
 					"bit_position": 360,
@@ -1218,7 +1218,7 @@
 					"factor": 0.01,
 					"sign": 0,
 					"unit":"s",
-					"generic_name": "Gnss.Position.Data.Age.Of.Dgnss.Corrections"
+					"name": "Gnss.Position.Data.Age.Of.Dgnss.Corrections"
 				}
 			}
 		},
@@ -1241,7 +1241,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"days",
-					"generic_name": "Time.Date.Date"
+					"name": "Time.Date.Date"
 				},
 				"Time": {
 					"bit_position": 16,
@@ -1251,7 +1251,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"s",
-					"generic_name": "Time.Date.Time"
+					"name": "Time.Date.Time"
 				},
 				"Local.Offset": {
 					"bit_position": 48,
@@ -1261,7 +1261,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 2,
 					"unit":"minutes",
-					"generic_name": "Time.Date.Local.Offset"
+					"name": "Time.Date.Local.Offset"
 				}
 			}
 		},
@@ -1280,7 +1280,7 @@
 					"bit_position": 0,
 					"bit_size": 6,
 					"sign": 0,
-					"generic_name": "Ais.Class.APosition.Report.Message.Id"
+					"name": "Ais.Class.APosition.Report.Message.Id"
 				},
 				"Repeat.Indicator": {
 					"bit_position": 6,
@@ -1293,7 +1293,7 @@
 						"Second retransmission": [2],
 						"Final retransmission": [3]
 					},
-					"generic_name": "Ais.Class.APosition.Report.Repeat.Indicator"
+					"name": "Ais.Class.APosition.Report.Repeat.Indicator"
 				},
 				"User.Id": {
 					"bit_position": 8,
@@ -1302,7 +1302,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"MMSI",
-					"generic_name": "Ais.Class.APosition.Report.User.Id"
+					"name": "Ais.Class.APosition.Report.User.Id"
 				},
 				"Longitude": {
 					"bit_position": 40,
@@ -1311,7 +1311,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 2,
 					"unit":"deg",
-					"generic_name": "Ais.Class.APosition.Report.Longitude"
+					"name": "Ais.Class.APosition.Report.Longitude"
 				},
 				"Latitude": {
 					"bit_position": 72,
@@ -1320,7 +1320,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 2,
 					"unit":"deg",
-					"generic_name": "Ais.Class.APosition.Report.Latitude"
+					"name": "Ais.Class.APosition.Report.Latitude"
 				},
 				"Position.Accuracy": {
 					"bit_position": 104,
@@ -1331,7 +1331,7 @@
 						"Low": [0],
 						"High": [1]
 					},
-					"generic_name": "Ais.Class.APosition.Report.Position.Accuracy"
+					"name": "Ais.Class.APosition.Report.Position.Accuracy"
 				},
 				"Raim": {
 					"bit_position": 105,
@@ -1342,7 +1342,7 @@
 						"not in use": [0],
 						"in use": [1]
 					},
-					"generic_name": "Ais.Class.APosition.Report.Raim"
+					"name": "Ais.Class.APosition.Report.Raim"
 				},
 				"Time.Stamp": {
 					"bit_position": 106,
@@ -1356,7 +1356,7 @@
 						"Dead reckoning mode": [62],
 						"Positioning system is inoperative": [63]
 					},
-					"generic_name": "Ais.Class.APosition.Report.Time.Stamp"
+					"name": "Ais.Class.APosition.Report.Time.Stamp"
 				},
 				"Cog": {
 					"bit_position": 112,
@@ -1364,7 +1364,7 @@
 					"factor": 0.0001,
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Ais.Class.APosition.Report.Cog"
+					"name": "Ais.Class.APosition.Report.Cog"
 				},
 				"Sog": {
 					"bit_position": 128,
@@ -1372,7 +1372,7 @@
 					"factor": 0.01,
 					"sign": 0,
 					"unit":"m/s",
-					"generic_name": "Ais.Class.APosition.Report.Sog"
+					"name": "Ais.Class.APosition.Report.Sog"
 				},
 				"Communication.State": {
 					"bit_position": 144,
@@ -1380,7 +1380,7 @@
 					"comment": "Information used by the TDMA slot allocation algorithm and synchronization information",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Ais.Class.APosition.Report.Communication.State"
+					"name": "Ais.Class.APosition.Report.Communication.State"
 				},
 				"Ais.Transceiver.Information": {
 					"bit_position": 163,
@@ -1395,7 +1395,7 @@
 						"Own information not broadcast": [4],
 						"Reserved": [5]
 					},
-					"generic_name": "Ais.Class.APosition.Report.Ais.Transceiver.Information"
+					"name": "Ais.Class.APosition.Report.Ais.Transceiver.Information"
 				},
 				"Heading": {
 					"bit_position": 168,
@@ -1404,7 +1404,7 @@
 					"comment": "True heading",
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Ais.Class.APosition.Report.Heading"
+					"name": "Ais.Class.APosition.Report.Heading"
 				},
 				"Rate.Of.Turn": {
 					"bit_position": 184,
@@ -1412,7 +1412,7 @@
 					"factor": 3.125e-05,
 					"sign": 2,
 					"unit":"rad/s",
-					"generic_name": "Ais.Class.APosition.Report.Rate.Of.Turn"
+					"name": "Ais.Class.APosition.Report.Rate.Of.Turn"
 				},
 				"Nav.Status": {
 					"bit_position": 200,
@@ -1433,7 +1433,7 @@
 						"Hazardous material - Wing in Ground": [10],
 						"AIS-SART": [14]
 					},
-					"generic_name": "Ais.Class.APosition.Report.Nav.Status"
+					"name": "Ais.Class.APosition.Report.Nav.Status"
 				},
 				"Special.Maneuver.Indicator": {
 					"bit_position": 204,
@@ -1446,7 +1446,7 @@
 						"Engaged in special maneuver": [2],
 						"Reserverd": [3]
 					},
-					"generic_name": "Ais.Class.APosition.Report.Special.Maneuver.Indicator"
+					"name": "Ais.Class.APosition.Report.Special.Maneuver.Indicator"
 				},
 				"Reserved": {
 					"bit_position": 206,
@@ -1454,14 +1454,14 @@
 					"comment": "reserved",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Ais.Class.APosition.Report.Reserved"
+					"name": "Ais.Class.APosition.Report.Reserved"
 				},
 				"Ais.Spare": {
 					"bit_position": 208,
 					"bit_size": 3,
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Ais.Class.APosition.Report.Ais.Spare"
+					"name": "Ais.Class.APosition.Report.Ais.Spare"
 				},
 				"Reserved": {
 					"bit_position": 211,
@@ -1469,7 +1469,7 @@
 					"comment": "reserved",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Ais.Class.APosition.Report.Reserved"
+					"name": "Ais.Class.APosition.Report.Reserved"
 				},
 				"Sequence.Id": {
 					"bit_position": 216,
@@ -1477,7 +1477,7 @@
 					"factor": 1,
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
-					"generic_name": "Ais.Class.APosition.Report.Sequence.Id"
+					"name": "Ais.Class.APosition.Report.Sequence.Id"
 				}
 			}
 		},
@@ -1496,7 +1496,7 @@
 					"bit_position": 0,
 					"bit_size": 6,
 					"sign": 0,
-					"generic_name": "Ais.Class.BPosition.Report.Message.Id"
+					"name": "Ais.Class.BPosition.Report.Message.Id"
 				},
 				"Repeat.Indicator": {
 					"bit_position": 6,
@@ -1509,7 +1509,7 @@
 						"Second retransmission": [2],
 						"Final retransmission": [3]
 					},
-					"generic_name": "Ais.Class.BPosition.Report.Repeat.Indicator"
+					"name": "Ais.Class.BPosition.Report.Repeat.Indicator"
 				},
 				"User.Id": {
 					"bit_position": 8,
@@ -1518,7 +1518,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"MMSI",
-					"generic_name": "Ais.Class.BPosition.Report.User.Id"
+					"name": "Ais.Class.BPosition.Report.User.Id"
 				},
 				"Longitude": {
 					"bit_position": 40,
@@ -1527,7 +1527,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 2,
 					"unit":"deg",
-					"generic_name": "Ais.Class.BPosition.Report.Longitude"
+					"name": "Ais.Class.BPosition.Report.Longitude"
 				},
 				"Latitude": {
 					"bit_position": 72,
@@ -1536,7 +1536,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 2,
 					"unit":"deg",
-					"generic_name": "Ais.Class.BPosition.Report.Latitude"
+					"name": "Ais.Class.BPosition.Report.Latitude"
 				},
 				"Position.Accuracy": {
 					"bit_position": 104,
@@ -1547,7 +1547,7 @@
 						"Low": [0],
 						"High": [1]
 					},
-					"generic_name": "Ais.Class.BPosition.Report.Position.Accuracy"
+					"name": "Ais.Class.BPosition.Report.Position.Accuracy"
 				},
 				"Raim": {
 					"bit_position": 105,
@@ -1558,7 +1558,7 @@
 						"not in use": [0],
 						"in use": [1]
 					},
-					"generic_name": "Ais.Class.BPosition.Report.Raim"
+					"name": "Ais.Class.BPosition.Report.Raim"
 				},
 				"Time.Stamp": {
 					"bit_position": 106,
@@ -1572,7 +1572,7 @@
 						"Dead reckoning mode": [62],
 						"Positioning system is inoperative": [63]
 					},
-					"generic_name": "Ais.Class.BPosition.Report.Time.Stamp"
+					"name": "Ais.Class.BPosition.Report.Time.Stamp"
 				},
 				"Cog": {
 					"bit_position": 112,
@@ -1580,7 +1580,7 @@
 					"factor": 0.0001,
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Ais.Class.BPosition.Report.Cog"
+					"name": "Ais.Class.BPosition.Report.Cog"
 				},
 				"Sog": {
 					"bit_position": 128,
@@ -1588,7 +1588,7 @@
 					"factor": 0.01,
 					"sign": 0,
 					"unit":"m/s",
-					"generic_name": "Ais.Class.BPosition.Report.Sog"
+					"name": "Ais.Class.BPosition.Report.Sog"
 				},
 				"Communication.State": {
 					"bit_position": 144,
@@ -1596,7 +1596,7 @@
 					"comment": "Information used by the TDMA slot allocation algorithm and synchronization information",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Ais.Class.BPosition.Report.Communication.State"
+					"name": "Ais.Class.BPosition.Report.Communication.State"
 				},
 				"Ais.Transceiver.Information": {
 					"bit_position": 163,
@@ -1611,7 +1611,7 @@
 						"Own information not broadcast": [4],
 						"Reserved": [5]
 					},
-					"generic_name": "Ais.Class.BPosition.Report.Ais.Transceiver.Information"
+					"name": "Ais.Class.BPosition.Report.Ais.Transceiver.Information"
 				},
 				"Heading": {
 					"bit_position": 168,
@@ -1620,19 +1620,19 @@
 					"comment": "True heading",
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Ais.Class.BPosition.Report.Heading"
+					"name": "Ais.Class.BPosition.Report.Heading"
 				},
 				"Regional.Application": {
 					"bit_position": 184,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Ais.Class.BPosition.Report.Regional.Application"
+					"name": "Ais.Class.BPosition.Report.Regional.Application"
 				},
 				"Regional.Application": {
 					"bit_position": 192,
 					"bit_size": 2,
 					"sign": 0,
-					"generic_name": "Ais.Class.BPosition.Report.Regional.Application"
+					"name": "Ais.Class.BPosition.Report.Regional.Application"
 				},
 				"Unit.Type": {
 					"bit_position": 194,
@@ -1643,7 +1643,7 @@
 						"SOTDMA": [0],
 						"CS": [1]
 					},
-					"generic_name": "Ais.Class.BPosition.Report.Unit.Type"
+					"name": "Ais.Class.BPosition.Report.Unit.Type"
 				},
 				"Integrated.Display": {
 					"bit_position": 195,
@@ -1657,7 +1657,7 @@
 						"Error": [2],
 						"Unavailable": [3]
 					},
-					"generic_name": "Ais.Class.BPosition.Report.Integrated.Display"
+					"name": "Ais.Class.BPosition.Report.Integrated.Display"
 				},
 				"Dsc": {
 					"bit_position": 196,
@@ -1670,7 +1670,7 @@
 						"Error": [2],
 						"Unavailable": [3]
 					},
-					"generic_name": "Ais.Class.BPosition.Report.Dsc"
+					"name": "Ais.Class.BPosition.Report.Dsc"
 				},
 				"Band": {
 					"bit_position": 197,
@@ -1681,7 +1681,7 @@
 						"top 525 kHz of marine band": [0],
 						"entire marine band": [1]
 					},
-					"generic_name": "Ais.Class.BPosition.Report.Band"
+					"name": "Ais.Class.BPosition.Report.Band"
 				},
 				"Can.Handle.Msg22": {
 					"bit_position": 198,
@@ -1695,7 +1695,7 @@
 						"Error": [2],
 						"Unavailable": [3]
 					},
-					"generic_name": "Ais.Class.BPosition.Report.Can.Handle.Msg22"
+					"name": "Ais.Class.BPosition.Report.Can.Handle.Msg22"
 				},
 				"Ais.Mode": {
 					"bit_position": 199,
@@ -1706,7 +1706,7 @@
 						"Autonomous": [0],
 						"Assigned": [1]
 					},
-					"generic_name": "Ais.Class.BPosition.Report.Ais.Mode"
+					"name": "Ais.Class.BPosition.Report.Ais.Mode"
 				},
 				"Ais.Communication.State": {
 					"bit_position": 200,
@@ -1717,7 +1717,7 @@
 						"SOTDMA": [0],
 						"ITDMA": [1]
 					},
-					"generic_name": "Ais.Class.BPosition.Report.Ais.Communication.State"
+					"name": "Ais.Class.BPosition.Report.Ais.Communication.State"
 				}
 			}
 		},
@@ -1736,7 +1736,7 @@
 					"bit_position": 0,
 					"bit_size": 6,
 					"sign": 0,
-					"generic_name": "Ais.Class.BExtended.Position.Report.Message.Id"
+					"name": "Ais.Class.BExtended.Position.Report.Message.Id"
 				},
 				"Repeat.Indicator": {
 					"bit_position": 6,
@@ -1749,7 +1749,7 @@
 						"Second retransmission": [2],
 						"Final retransmission": [3]
 					},
-					"generic_name": "Ais.Class.BExtended.Position.Report.Repeat.Indicator"
+					"name": "Ais.Class.BExtended.Position.Report.Repeat.Indicator"
 				},
 				"User.Id": {
 					"bit_position": 8,
@@ -1758,7 +1758,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"MMSI",
-					"generic_name": "Ais.Class.BExtended.Position.Report.User.Id"
+					"name": "Ais.Class.BExtended.Position.Report.User.Id"
 				},
 				"Longitude": {
 					"bit_position": 40,
@@ -1767,7 +1767,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 2,
 					"unit":"deg",
-					"generic_name": "Ais.Class.BExtended.Position.Report.Longitude"
+					"name": "Ais.Class.BExtended.Position.Report.Longitude"
 				},
 				"Latitude": {
 					"bit_position": 72,
@@ -1776,7 +1776,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 2,
 					"unit":"deg",
-					"generic_name": "Ais.Class.BExtended.Position.Report.Latitude"
+					"name": "Ais.Class.BExtended.Position.Report.Latitude"
 				},
 				"Position.Accuracy": {
 					"bit_position": 104,
@@ -1787,7 +1787,7 @@
 						"Low": [0],
 						"High": [1]
 					},
-					"generic_name": "Ais.Class.BExtended.Position.Report.Position.Accuracy"
+					"name": "Ais.Class.BExtended.Position.Report.Position.Accuracy"
 				},
 				"Ais.Raim.Flag": {
 					"bit_position": 105,
@@ -1798,7 +1798,7 @@
 						"not in use": [0],
 						"in use": [1]
 					},
-					"generic_name": "Ais.Class.BExtended.Position.Report.Ais.Raim.Flag"
+					"name": "Ais.Class.BExtended.Position.Report.Ais.Raim.Flag"
 				},
 				"Time.Stamp": {
 					"bit_position": 106,
@@ -1812,7 +1812,7 @@
 						"Dead reckoning mode": [62],
 						"Positioning system is inoperative": [63]
 					},
-					"generic_name": "Ais.Class.BExtended.Position.Report.Time.Stamp"
+					"name": "Ais.Class.BExtended.Position.Report.Time.Stamp"
 				},
 				"Cog": {
 					"bit_position": 112,
@@ -1820,7 +1820,7 @@
 					"factor": 0.0001,
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Ais.Class.BExtended.Position.Report.Cog"
+					"name": "Ais.Class.BExtended.Position.Report.Cog"
 				},
 				"Sog": {
 					"bit_position": 128,
@@ -1828,19 +1828,19 @@
 					"factor": 0.01,
 					"sign": 0,
 					"unit":"m/s",
-					"generic_name": "Ais.Class.BExtended.Position.Report.Sog"
+					"name": "Ais.Class.BExtended.Position.Report.Sog"
 				},
 				"Regional.Application": {
 					"bit_position": 144,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Ais.Class.BExtended.Position.Report.Regional.Application"
+					"name": "Ais.Class.BExtended.Position.Report.Regional.Application"
 				},
 				"Regional.Application": {
 					"bit_position": 152,
 					"bit_size": 4,
 					"sign": 0,
-					"generic_name": "Ais.Class.BExtended.Position.Report.Regional.Application"
+					"name": "Ais.Class.BExtended.Position.Report.Regional.Application"
 				},
 				"Reserved": {
 					"bit_position": 156,
@@ -1848,7 +1848,7 @@
 					"comment": "reserved",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Ais.Class.BExtended.Position.Report.Reserved"
+					"name": "Ais.Class.BExtended.Position.Report.Reserved"
 				},
 				"Type.Of.Ship": {
 					"bit_position": 160,
@@ -1904,7 +1904,7 @@
 						"Other hazard cat D": [94],
 						"Other (no additional information)": [99]
 					},
-					"generic_name": "Ais.Class.BExtended.Position.Report.Type.Of.Ship"
+					"name": "Ais.Class.BExtended.Position.Report.Type.Of.Ship"
 				},
 				"True.Heading": {
 					"bit_position": 168,
@@ -1912,14 +1912,14 @@
 					"factor": 0.0001,
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Ais.Class.BExtended.Position.Report.True.Heading"
+					"name": "Ais.Class.BExtended.Position.Report.True.Heading"
 				},
 				"Reserved": {
 					"bit_position": 184,
 					"bit_size": 4,
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Ais.Class.BExtended.Position.Report.Reserved"
+					"name": "Ais.Class.BExtended.Position.Report.Reserved"
 				},
 				"Gnss.Type": {
 					"bit_position": 188,
@@ -1937,7 +1937,7 @@
 						"surveyed": [7],
 						"Galileo": [8]
 					},
-					"generic_name": "Ais.Class.BExtended.Position.Report.Gnss.Type"
+					"name": "Ais.Class.BExtended.Position.Report.Gnss.Type"
 				},
 				"Length": {
 					"bit_position": 192,
@@ -1945,7 +1945,7 @@
 					"factor": 0.1,
 					"sign": 0,
 					"unit":"m",
-					"generic_name": "Ais.Class.BExtended.Position.Report.Length"
+					"name": "Ais.Class.BExtended.Position.Report.Length"
 				},
 				"Beam": {
 					"bit_position": 208,
@@ -1953,7 +1953,7 @@
 					"factor": 0.1,
 					"sign": 0,
 					"unit":"m",
-					"generic_name": "Ais.Class.BExtended.Position.Report.Beam"
+					"name": "Ais.Class.BExtended.Position.Report.Beam"
 				},
 				"Position.Reference.From.Starboard": {
 					"bit_position": 224,
@@ -1961,7 +1961,7 @@
 					"factor": 0.1,
 					"sign": 0,
 					"unit":"m",
-					"generic_name": "Ais.Class.BExtended.Position.Report.Position.Reference.From.Starboard"
+					"name": "Ais.Class.BExtended.Position.Report.Position.Reference.From.Starboard"
 				},
 				"Position.Reference.From.Bow": {
 					"bit_position": 240,
@@ -1969,14 +1969,14 @@
 					"factor": 0.1,
 					"sign": 0,
 					"unit":"m",
-					"generic_name": "Ais.Class.BExtended.Position.Report.Position.Reference.From.Bow"
+					"name": "Ais.Class.BExtended.Position.Report.Position.Reference.From.Bow"
 				},
 				"Name": {
 					"bit_position": 256,
 					"bit_size": 160,
 					"decoder": "decoder_t::decode_ascii",
 					"sign": 0,
-					"generic_name": "Ais.Class.BExtended.Position.Report.Name"
+					"name": "Ais.Class.BExtended.Position.Report.Name"
 				},
 				"Dte": {
 					"bit_position": 416,
@@ -1987,20 +1987,20 @@
 						"Available": [0],
 						"Not available": [1]
 					},
-					"generic_name": "Ais.Class.BExtended.Position.Report.Dte"
+					"name": "Ais.Class.BExtended.Position.Report.Dte"
 				},
 				"Ais.Mode": {
 					"bit_position": 417,
 					"bit_size": 1,
 					"sign": 0,
-					"generic_name": "Ais.Class.BExtended.Position.Report.Ais.Mode"
+					"name": "Ais.Class.BExtended.Position.Report.Ais.Mode"
 				},
 				"Reserved": {
 					"bit_position": 418,
 					"bit_size": 4,
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Ais.Class.BExtended.Position.Report.Reserved"
+					"name": "Ais.Class.BExtended.Position.Report.Reserved"
 				},
 				"Ais.Transceiver.Information": {
 					"bit_position": 422,
@@ -2015,7 +2015,7 @@
 						"Own information not broadcast": [4],
 						"Reserved": [5]
 					},
-					"generic_name": "Ais.Class.BExtended.Position.Report.Ais.Transceiver.Information"
+					"name": "Ais.Class.BExtended.Position.Report.Ais.Transceiver.Information"
 				}
 			}
 		},
@@ -2036,7 +2036,7 @@
 					"comment": "defined in IHO Publication S-60, Appendices B and C. First three chars are datum ID as per IHO tables. Fourth char is local datum subdivision code.",
 					"decoder": "decoder_t::decode_ascii",
 					"sign": 0,
-					"generic_name": "Datum.Local.Datum"
+					"name": "Datum.Local.Datum"
 				},
 				"Delta.Latitude": {
 					"bit_position": 32,
@@ -2045,7 +2045,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 2,
 					"unit":"deg",
-					"generic_name": "Datum.Delta.Latitude"
+					"name": "Datum.Delta.Latitude"
 				},
 				"Delta.Longitude": {
 					"bit_position": 64,
@@ -2054,7 +2054,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 2,
 					"unit":"deg",
-					"generic_name": "Datum.Delta.Longitude"
+					"name": "Datum.Delta.Longitude"
 				},
 				"Delta.Altitude": {
 					"bit_position": 96,
@@ -2062,7 +2062,7 @@
 					"factor": 1e-06,
 					"sign": 2,
 					"unit":"m",
-					"generic_name": "Datum.Delta.Altitude"
+					"name": "Datum.Delta.Altitude"
 				},
 				"Reference.Datum": {
 					"bit_position": 128,
@@ -2070,7 +2070,7 @@
 					"comment": "defined in IHO Publication S-60, Appendices B and C. First three chars are datum ID as per IHO tables. Fourth char is local datum subdivision code.",
 					"decoder": "decoder_t::decode_ascii",
 					"sign": 0,
-					"generic_name": "Datum.Reference.Datum"
+					"name": "Datum.Reference.Datum"
 				}
 			}
 		},
@@ -2089,7 +2089,7 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Cross.Track.Error.Sid"
+					"name": "Cross.Track.Error.Sid"
 				},
 				"Xte.Mode": {
 					"bit_position": 8,
@@ -2103,7 +2103,7 @@
 						"Simulator": [3],
 						"Manual": [4]
 					},
-					"generic_name": "Cross.Track.Error.Xte.Mode"
+					"name": "Cross.Track.Error.Xte.Mode"
 				},
 				"Reserved": {
 					"bit_position": 12,
@@ -2111,7 +2111,7 @@
 					"comment": "reserved",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Cross.Track.Error.Reserved"
+					"name": "Cross.Track.Error.Reserved"
 				},
 				"Navigation.Terminated": {
 					"bit_position": 14,
@@ -2124,7 +2124,7 @@
 						"Error": [2],
 						"Unavailable": [3]
 					},
-					"generic_name": "Cross.Track.Error.Navigation.Terminated"
+					"name": "Cross.Track.Error.Navigation.Terminated"
 				},
 				"Xte": {
 					"bit_position": 16,
@@ -2132,7 +2132,7 @@
 					"factor": 0.01,
 					"sign": 2,
 					"unit":"m",
-					"generic_name": "Cross.Track.Error.Xte"
+					"name": "Cross.Track.Error.Xte"
 				}
 			}
 		},
@@ -2151,7 +2151,7 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Navigation.Data.Sid"
+					"name": "Navigation.Data.Sid"
 				},
 				"Distance.To.Waypoint": {
 					"bit_position": 8,
@@ -2159,7 +2159,7 @@
 					"factor": 0.01,
 					"sign": 0,
 					"unit":"m",
-					"generic_name": "Navigation.Data.Distance.To.Waypoint"
+					"name": "Navigation.Data.Distance.To.Waypoint"
 				},
 				"Course.Bearing.Reference": {
 					"bit_position": 40,
@@ -2172,7 +2172,7 @@
 						"Error": [2],
 						"Null": [3]
 					},
-					"generic_name": "Navigation.Data.Course.Bearing.Reference"
+					"name": "Navigation.Data.Course.Bearing.Reference"
 				},
 				"Perpendicular.Crossed": {
 					"bit_position": 42,
@@ -2185,7 +2185,7 @@
 						"Error": [2],
 						"Unavailable": [3]
 					},
-					"generic_name": "Navigation.Data.Perpendicular.Crossed"
+					"name": "Navigation.Data.Perpendicular.Crossed"
 				},
 				"Arrival.Circle.Entered": {
 					"bit_position": 44,
@@ -2198,7 +2198,7 @@
 						"Error": [2],
 						"Unavailable": [3]
 					},
-					"generic_name": "Navigation.Data.Arrival.Circle.Entered"
+					"name": "Navigation.Data.Arrival.Circle.Entered"
 				},
 				"Calculation.Type": {
 					"bit_position": 46,
@@ -2209,7 +2209,7 @@
 						"Great Circle": [0],
 						"Rhumb Line": [1]
 					},
-					"generic_name": "Navigation.Data.Calculation.Type"
+					"name": "Navigation.Data.Calculation.Type"
 				},
 				"Eta.Time": {
 					"bit_position": 48,
@@ -2219,7 +2219,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"s",
-					"generic_name": "Navigation.Data.Eta.Time"
+					"name": "Navigation.Data.Eta.Time"
 				},
 				"Eta.Date": {
 					"bit_position": 80,
@@ -2229,7 +2229,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"days",
-					"generic_name": "Navigation.Data.Eta.Date"
+					"name": "Navigation.Data.Eta.Date"
 				},
 				"Bearing.Origin.To.Destination.Waypoint": {
 					"bit_position": 96,
@@ -2237,7 +2237,7 @@
 					"factor": 0.0001,
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Navigation.Data.Bearing.Origin.To.Destination.Waypoint"
+					"name": "Navigation.Data.Bearing.Origin.To.Destination.Waypoint"
 				},
 				"Bearing.Position.To.Destination.Waypoint": {
 					"bit_position": 112,
@@ -2245,19 +2245,19 @@
 					"factor": 0.0001,
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Navigation.Data.Bearing.Position.To.Destination.Waypoint"
+					"name": "Navigation.Data.Bearing.Position.To.Destination.Waypoint"
 				},
 				"Origin.Waypoint.Number": {
 					"bit_position": 128,
 					"bit_size": 32,
 					"sign": 0,
-					"generic_name": "Navigation.Data.Origin.Waypoint.Number"
+					"name": "Navigation.Data.Origin.Waypoint.Number"
 				},
 				"Destination.Waypoint.Number": {
 					"bit_position": 160,
 					"bit_size": 32,
 					"sign": 0,
-					"generic_name": "Navigation.Data.Destination.Waypoint.Number"
+					"name": "Navigation.Data.Destination.Waypoint.Number"
 				},
 				"Destination.Latitude": {
 					"bit_position": 192,
@@ -2266,7 +2266,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 2,
 					"unit":"deg",
-					"generic_name": "Navigation.Data.Destination.Latitude"
+					"name": "Navigation.Data.Destination.Latitude"
 				},
 				"Destination.Longitude": {
 					"bit_position": 224,
@@ -2275,7 +2275,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 2,
 					"unit":"deg",
-					"generic_name": "Navigation.Data.Destination.Longitude"
+					"name": "Navigation.Data.Destination.Longitude"
 				},
 				"Waypoint.Closing.Velocity": {
 					"bit_position": 256,
@@ -2283,7 +2283,7 @@
 					"factor": 0.01,
 					"sign": 2,
 					"unit":"m/s",
-					"generic_name": "Navigation.Data.Waypoint.Closing.Velocity"
+					"name": "Navigation.Data.Waypoint.Closing.Velocity"
 				}
 			}
 		},
@@ -2302,7 +2302,7 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Set.Drift.Rapid.Update.Sid"
+					"name": "Set.Drift.Rapid.Update.Sid"
 				},
 				"Set.Reference": {
 					"bit_position": 8,
@@ -2315,7 +2315,7 @@
 						"Error": [2],
 						"Null": [3]
 					},
-					"generic_name": "Set.Drift.Rapid.Update.Set.Reference"
+					"name": "Set.Drift.Rapid.Update.Set.Reference"
 				},
 				"Reserved": {
 					"bit_position": 10,
@@ -2323,7 +2323,7 @@
 					"comment": "Reserved",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Set.Drift.Rapid.Update.Reserved"
+					"name": "Set.Drift.Rapid.Update.Reserved"
 				},
 				"Set": {
 					"bit_position": 16,
@@ -2331,7 +2331,7 @@
 					"factor": 0.0001,
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Set.Drift.Rapid.Update.Set"
+					"name": "Set.Drift.Rapid.Update.Set"
 				},
 				"Drift": {
 					"bit_position": 32,
@@ -2339,7 +2339,7 @@
 					"factor": 0.01,
 					"sign": 0,
 					"unit":"m/s",
-					"generic_name": "Set.Drift.Rapid.Update.Drift"
+					"name": "Set.Drift.Rapid.Update.Drift"
 				}
 			}
 		},
@@ -2358,7 +2358,7 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Gnss.Dops.Sid"
+					"name": "Gnss.Dops.Sid"
 				},
 				"Desired.Mode": {
 					"bit_position": 8,
@@ -2374,7 +2374,7 @@
 						"Reserved": [5],
 						"Error": [6]
 					},
-					"generic_name": "Gnss.Dops.Desired.Mode"
+					"name": "Gnss.Dops.Desired.Mode"
 				},
 				"Actual.Mode": {
 					"bit_position": 11,
@@ -2390,7 +2390,7 @@
 						"Reserved": [5],
 						"Error": [6]
 					},
-					"generic_name": "Gnss.Dops.Actual.Mode"
+					"name": "Gnss.Dops.Actual.Mode"
 				},
 				"Reserved": {
 					"bit_position": 14,
@@ -2398,7 +2398,7 @@
 					"comment": "Reserved",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Gnss.Dops.Reserved"
+					"name": "Gnss.Dops.Reserved"
 				},
 				"Hdop": {
 					"bit_position": 16,
@@ -2406,7 +2406,7 @@
 					"factor": 0.01,
 					"comment": "Horizontal dilution of precision",
 					"sign": 2,
-					"generic_name": "Gnss.Dops.Hdop"
+					"name": "Gnss.Dops.Hdop"
 				},
 				"Vdop": {
 					"bit_position": 32,
@@ -2414,7 +2414,7 @@
 					"factor": 0.01,
 					"comment": "Vertical dilution of precision",
 					"sign": 2,
-					"generic_name": "Gnss.Dops.Vdop"
+					"name": "Gnss.Dops.Vdop"
 				},
 				"Tdop": {
 					"bit_position": 48,
@@ -2422,7 +2422,7 @@
 					"factor": 0.01,
 					"comment": "Time dilution of precision",
 					"sign": 2,
-					"generic_name": "Gnss.Dops.Tdop"
+					"name": "Gnss.Dops.Tdop"
 				}
 			}
 		},
@@ -2441,7 +2441,7 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Gnss.Sats.In.View.Sid"
+					"name": "Gnss.Sats.In.View.Sid"
 				},
 				"Mode": {
 					"bit_position": 8,
@@ -2451,7 +2451,7 @@
 					"states": {
 						"Range residuals used to calculate position": [3]
 					},
-					"generic_name": "Gnss.Sats.In.View.Mode"
+					"name": "Gnss.Sats.In.View.Mode"
 				},
 				"Reserved": {
 					"bit_position": 10,
@@ -2459,19 +2459,19 @@
 					"comment": "Reserved",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Gnss.Sats.In.View.Reserved"
+					"name": "Gnss.Sats.In.View.Reserved"
 				},
 				"Sats.In.View": {
 					"bit_position": 16,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Gnss.Sats.In.View.Sats.In.View"
+					"name": "Gnss.Sats.In.View.Sats.In.View"
 				},
 				"Prn": {
 					"bit_position": 24,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Gnss.Sats.In.View.Prn"
+					"name": "Gnss.Sats.In.View.Prn"
 				},
 				"Elevation": {
 					"bit_position": 32,
@@ -2479,7 +2479,7 @@
 					"factor": 0.0001,
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Gnss.Sats.In.View.Elevation"
+					"name": "Gnss.Sats.In.View.Elevation"
 				},
 				"Azimuth": {
 					"bit_position": 48,
@@ -2487,7 +2487,7 @@
 					"factor": 0.0001,
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Gnss.Sats.In.View.Azimuth"
+					"name": "Gnss.Sats.In.View.Azimuth"
 				},
 				"Snr": {
 					"bit_position": 64,
@@ -2495,13 +2495,13 @@
 					"factor": 0.01,
 					"sign": 0,
 					"unit":"dB",
-					"generic_name": "Gnss.Sats.In.View.Snr"
+					"name": "Gnss.Sats.In.View.Snr"
 				},
 				"Range.Residuals": {
 					"bit_position": 80,
 					"bit_size": 32,
 					"sign": 2,
-					"generic_name": "Gnss.Sats.In.View.Range.Residuals"
+					"name": "Gnss.Sats.In.View.Range.Residuals"
 				},
 				"Status": {
 					"bit_position": 112,
@@ -2516,7 +2516,7 @@
 						"Tracked+Diff": [4],
 						"Used+Diff": [5]
 					},
-					"generic_name": "Gnss.Sats.In.View.Status"
+					"name": "Gnss.Sats.In.View.Status"
 				},
 				"Reserved": {
 					"bit_position": 116,
@@ -2524,7 +2524,7 @@
 					"comment": "Reserved",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Gnss.Sats.In.View.Reserved"
+					"name": "Gnss.Sats.In.View.Reserved"
 				}
 			}
 		},
@@ -2543,7 +2543,7 @@
 					"bit_position": 0,
 					"bit_size": 6,
 					"sign": 0,
-					"generic_name": "Ais.Utc.And.Date.Report.Message.Id"
+					"name": "Ais.Utc.And.Date.Report.Message.Id"
 				},
 				"Repeat.Indicator": {
 					"bit_position": 6,
@@ -2556,7 +2556,7 @@
 						"Second retransmission": [2],
 						"Final retransmission": [3]
 					},
-					"generic_name": "Ais.Utc.And.Date.Report.Repeat.Indicator"
+					"name": "Ais.Utc.And.Date.Report.Repeat.Indicator"
 				},
 				"User.Id": {
 					"bit_position": 8,
@@ -2565,7 +2565,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"MMSI",
-					"generic_name": "Ais.Utc.And.Date.Report.User.Id"
+					"name": "Ais.Utc.And.Date.Report.User.Id"
 				},
 				"Longitude": {
 					"bit_position": 40,
@@ -2574,7 +2574,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 2,
 					"unit":"deg",
-					"generic_name": "Ais.Utc.And.Date.Report.Longitude"
+					"name": "Ais.Utc.And.Date.Report.Longitude"
 				},
 				"Latitude": {
 					"bit_position": 72,
@@ -2583,7 +2583,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 2,
 					"unit":"deg",
-					"generic_name": "Ais.Utc.And.Date.Report.Latitude"
+					"name": "Ais.Utc.And.Date.Report.Latitude"
 				},
 				"Position.Accuracy": {
 					"bit_position": 104,
@@ -2594,7 +2594,7 @@
 						"Low": [0],
 						"High": [1]
 					},
-					"generic_name": "Ais.Utc.And.Date.Report.Position.Accuracy"
+					"name": "Ais.Utc.And.Date.Report.Position.Accuracy"
 				},
 				"Raim": {
 					"bit_position": 105,
@@ -2605,7 +2605,7 @@
 						"not in use": [0],
 						"in use": [1]
 					},
-					"generic_name": "Ais.Utc.And.Date.Report.Raim"
+					"name": "Ais.Utc.And.Date.Report.Raim"
 				},
 				"Reserved": {
 					"bit_position": 106,
@@ -2613,7 +2613,7 @@
 					"comment": "NMEA reserved to align next data on byte boundary",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Ais.Utc.And.Date.Report.Reserved"
+					"name": "Ais.Utc.And.Date.Report.Reserved"
 				},
 				"Position.Time": {
 					"bit_position": 112,
@@ -2623,7 +2623,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"s",
-					"generic_name": "Ais.Utc.And.Date.Report.Position.Time"
+					"name": "Ais.Utc.And.Date.Report.Position.Time"
 				},
 				"Communication.State": {
 					"bit_position": 144,
@@ -2631,7 +2631,7 @@
 					"comment": "Information used by the TDMA slot allocation algorithm and synchronization information",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Ais.Utc.And.Date.Report.Communication.State"
+					"name": "Ais.Utc.And.Date.Report.Communication.State"
 				},
 				"Ais.Transceiver.Information": {
 					"bit_position": 163,
@@ -2646,7 +2646,7 @@
 						"Own information not broadcast": [4],
 						"Reserved": [5]
 					},
-					"generic_name": "Ais.Utc.And.Date.Report.Ais.Transceiver.Information"
+					"name": "Ais.Utc.And.Date.Report.Ais.Transceiver.Information"
 				},
 				"Position.Date": {
 					"bit_position": 168,
@@ -2656,7 +2656,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"days",
-					"generic_name": "Ais.Utc.And.Date.Report.Position.Date"
+					"name": "Ais.Utc.And.Date.Report.Position.Date"
 				},
 				"Reserved": {
 					"bit_position": 184,
@@ -2664,7 +2664,7 @@
 					"comment": "NMEA reserved to align next data on byte boundary",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Ais.Utc.And.Date.Report.Reserved"
+					"name": "Ais.Utc.And.Date.Report.Reserved"
 				},
 				"Gnss.Type": {
 					"bit_position": 188,
@@ -2682,14 +2682,14 @@
 						"surveyed": [7],
 						"Galileo": [8]
 					},
-					"generic_name": "Ais.Utc.And.Date.Report.Gnss.Type"
+					"name": "Ais.Utc.And.Date.Report.Gnss.Type"
 				},
 				"Spare": {
 					"bit_position": 192,
 					"bit_size": 8,
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Ais.Utc.And.Date.Report.Spare"
+					"name": "Ais.Utc.And.Date.Report.Spare"
 				}
 			}
 		},
@@ -2708,7 +2708,7 @@
 					"bit_position": 0,
 					"bit_size": 6,
 					"sign": 0,
-					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Message.Id"
+					"name": "Ais.Class.AStatic.And.Voyage.Related.Data.Message.Id"
 				},
 				"Repeat.Indicator": {
 					"bit_position": 6,
@@ -2721,7 +2721,7 @@
 						"Second retransmission": [2],
 						"Final retransmission": [3]
 					},
-					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Repeat.Indicator"
+					"name": "Ais.Class.AStatic.And.Voyage.Related.Data.Repeat.Indicator"
 				},
 				"User.Id": {
 					"bit_position": 8,
@@ -2730,7 +2730,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"MMSI",
-					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.User.Id"
+					"name": "Ais.Class.AStatic.And.Voyage.Related.Data.User.Id"
 				},
 				"Imo.Number": {
 					"bit_position": 40,
@@ -2738,21 +2738,21 @@
 					"factor": 1,
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
-					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Imo.Number"
+					"name": "Ais.Class.AStatic.And.Voyage.Related.Data.Imo.Number"
 				},
 				"Callsign": {
 					"bit_position": 72,
 					"bit_size": 56,
 					"decoder": "decoder_t::decode_ascii",
 					"sign": 0,
-					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Callsign"
+					"name": "Ais.Class.AStatic.And.Voyage.Related.Data.Callsign"
 				},
 				"Name": {
 					"bit_position": 128,
 					"bit_size": 160,
 					"decoder": "decoder_t::decode_ascii",
 					"sign": 0,
-					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Name"
+					"name": "Ais.Class.AStatic.And.Voyage.Related.Data.Name"
 				},
 				"Type.Of.Ship": {
 					"bit_position": 288,
@@ -2808,7 +2808,7 @@
 						"Other hazard cat D": [94],
 						"Other (no additional information)": [99]
 					},
-					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Type.Of.Ship"
+					"name": "Ais.Class.AStatic.And.Voyage.Related.Data.Type.Of.Ship"
 				},
 				"Length": {
 					"bit_position": 296,
@@ -2816,7 +2816,7 @@
 					"factor": 0.1,
 					"sign": 0,
 					"unit":"m",
-					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Length"
+					"name": "Ais.Class.AStatic.And.Voyage.Related.Data.Length"
 				},
 				"Beam": {
 					"bit_position": 312,
@@ -2824,7 +2824,7 @@
 					"factor": 0.1,
 					"sign": 0,
 					"unit":"m",
-					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Beam"
+					"name": "Ais.Class.AStatic.And.Voyage.Related.Data.Beam"
 				},
 				"Position.Reference.From.Starboard": {
 					"bit_position": 328,
@@ -2832,7 +2832,7 @@
 					"factor": 0.1,
 					"sign": 0,
 					"unit":"m",
-					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Position.Reference.From.Starboard"
+					"name": "Ais.Class.AStatic.And.Voyage.Related.Data.Position.Reference.From.Starboard"
 				},
 				"Position.Reference.From.Bow": {
 					"bit_position": 344,
@@ -2840,7 +2840,7 @@
 					"factor": 0.1,
 					"sign": 0,
 					"unit":"m",
-					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Position.Reference.From.Bow"
+					"name": "Ais.Class.AStatic.And.Voyage.Related.Data.Position.Reference.From.Bow"
 				},
 				"Eta.Date": {
 					"bit_position": 360,
@@ -2850,7 +2850,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"days",
-					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Eta.Date"
+					"name": "Ais.Class.AStatic.And.Voyage.Related.Data.Eta.Date"
 				},
 				"Eta.Time": {
 					"bit_position": 376,
@@ -2860,7 +2860,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"s",
-					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Eta.Time"
+					"name": "Ais.Class.AStatic.And.Voyage.Related.Data.Eta.Time"
 				},
 				"Draft": {
 					"bit_position": 408,
@@ -2868,14 +2868,14 @@
 					"factor": 0.01,
 					"sign": 0,
 					"unit":"m",
-					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Draft"
+					"name": "Ais.Class.AStatic.And.Voyage.Related.Data.Draft"
 				},
 				"Destination": {
 					"bit_position": 424,
 					"bit_size": 160,
 					"decoder": "decoder_t::decode_ascii",
 					"sign": 0,
-					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Destination"
+					"name": "Ais.Class.AStatic.And.Voyage.Related.Data.Destination"
 				},
 				"Ais.Version.Indicator": {
 					"bit_position": 584,
@@ -2886,7 +2886,7 @@
 						"ITU-R M.1371-1": [0],
 						"ITU-R M.1371-3": [1]
 					},
-					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Ais.Version.Indicator"
+					"name": "Ais.Class.AStatic.And.Voyage.Related.Data.Ais.Version.Indicator"
 				},
 				"Gnss.Type": {
 					"bit_position": 586,
@@ -2904,7 +2904,7 @@
 						"surveyed": [7],
 						"Galileo": [8]
 					},
-					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Gnss.Type"
+					"name": "Ais.Class.AStatic.And.Voyage.Related.Data.Gnss.Type"
 				},
 				"Dte": {
 					"bit_position": 590,
@@ -2915,7 +2915,7 @@
 						"available": [0],
 						"not available": [1]
 					},
-					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Dte"
+					"name": "Ais.Class.AStatic.And.Voyage.Related.Data.Dte"
 				},
 				"Reserved": {
 					"bit_position": 591,
@@ -2923,7 +2923,7 @@
 					"comment": "reserved",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Reserved"
+					"name": "Ais.Class.AStatic.And.Voyage.Related.Data.Reserved"
 				},
 				"Ais.Transceiver.Information": {
 					"bit_position": 592,
@@ -2938,7 +2938,7 @@
 						"Own information not broadcast": [4],
 						"Reserved": [5]
 					},
-					"generic_name": "Ais.Class.AStatic.And.Voyage.Related.Data.Ais.Transceiver.Information"
+					"name": "Ais.Class.AStatic.And.Voyage.Related.Data.Ais.Transceiver.Information"
 				}
 			}
 		},
@@ -2957,7 +2957,7 @@
 					"bit_position": 0,
 					"bit_size": 6,
 					"sign": 0,
-					"generic_name": "Ais.Sar.Aircraft.Position.Report.Message.Id"
+					"name": "Ais.Sar.Aircraft.Position.Report.Message.Id"
 				},
 				"Repeat.Indicator": {
 					"bit_position": 6,
@@ -2970,7 +2970,7 @@
 						"Second retransmission": [2],
 						"Final retransmission": [3]
 					},
-					"generic_name": "Ais.Sar.Aircraft.Position.Report.Repeat.Indicator"
+					"name": "Ais.Sar.Aircraft.Position.Report.Repeat.Indicator"
 				},
 				"User.Id": {
 					"bit_position": 8,
@@ -2979,7 +2979,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"MMSI",
-					"generic_name": "Ais.Sar.Aircraft.Position.Report.User.Id"
+					"name": "Ais.Sar.Aircraft.Position.Report.User.Id"
 				},
 				"Longitude": {
 					"bit_position": 40,
@@ -2988,7 +2988,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 2,
 					"unit":"deg",
-					"generic_name": "Ais.Sar.Aircraft.Position.Report.Longitude"
+					"name": "Ais.Sar.Aircraft.Position.Report.Longitude"
 				},
 				"Latitude": {
 					"bit_position": 72,
@@ -2997,7 +2997,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 2,
 					"unit":"deg",
-					"generic_name": "Ais.Sar.Aircraft.Position.Report.Latitude"
+					"name": "Ais.Sar.Aircraft.Position.Report.Latitude"
 				},
 				"Position.Accuracy": {
 					"bit_position": 104,
@@ -3008,7 +3008,7 @@
 						"Low": [0],
 						"High": [1]
 					},
-					"generic_name": "Ais.Sar.Aircraft.Position.Report.Position.Accuracy"
+					"name": "Ais.Sar.Aircraft.Position.Report.Position.Accuracy"
 				},
 				"Raim": {
 					"bit_position": 105,
@@ -3019,7 +3019,7 @@
 						"not in use": [0],
 						"in use": [1]
 					},
-					"generic_name": "Ais.Sar.Aircraft.Position.Report.Raim"
+					"name": "Ais.Sar.Aircraft.Position.Report.Raim"
 				},
 				"Time.Stamp": {
 					"bit_position": 106,
@@ -3033,7 +3033,7 @@
 						"Dead reckoning mode": [62],
 						"Positioning system is inoperative": [63]
 					},
-					"generic_name": "Ais.Sar.Aircraft.Position.Report.Time.Stamp"
+					"name": "Ais.Sar.Aircraft.Position.Report.Time.Stamp"
 				},
 				"Cog": {
 					"bit_position": 112,
@@ -3041,7 +3041,7 @@
 					"factor": 0.0001,
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Ais.Sar.Aircraft.Position.Report.Cog"
+					"name": "Ais.Sar.Aircraft.Position.Report.Cog"
 				},
 				"Sog": {
 					"bit_position": 128,
@@ -3049,7 +3049,7 @@
 					"factor": 0.1,
 					"sign": 0,
 					"unit":"m/s",
-					"generic_name": "Ais.Sar.Aircraft.Position.Report.Sog"
+					"name": "Ais.Sar.Aircraft.Position.Report.Sog"
 				},
 				"Communication.State": {
 					"bit_position": 144,
@@ -3057,7 +3057,7 @@
 					"comment": "Information used by the TDMA slot allocation algorithm and synchronization information",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Ais.Sar.Aircraft.Position.Report.Communication.State"
+					"name": "Ais.Sar.Aircraft.Position.Report.Communication.State"
 				},
 				"Ais.Transceiver.Information": {
 					"bit_position": 163,
@@ -3072,7 +3072,7 @@
 						"Own information not broadcast": [4],
 						"Reserved": [5]
 					},
-					"generic_name": "Ais.Sar.Aircraft.Position.Report.Ais.Transceiver.Information"
+					"name": "Ais.Sar.Aircraft.Position.Report.Ais.Transceiver.Information"
 				},
 				"Altitude": {
 					"bit_position": 168,
@@ -3080,14 +3080,14 @@
 					"factor": 1e-06,
 					"sign": 2,
 					"unit":"m",
-					"generic_name": "Ais.Sar.Aircraft.Position.Report.Altitude"
+					"name": "Ais.Sar.Aircraft.Position.Report.Altitude"
 				},
 				"Reserved.For.Regional.Applications": {
 					"bit_position": 232,
 					"bit_size": 8,
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Ais.Sar.Aircraft.Position.Report.Reserved.For.Regional.Applications"
+					"name": "Ais.Sar.Aircraft.Position.Report.Reserved.For.Regional.Applications"
 				},
 				"Dte": {
 					"bit_position": 240,
@@ -3098,7 +3098,7 @@
 						"Available": [0],
 						"Not available": [1]
 					},
-					"generic_name": "Ais.Sar.Aircraft.Position.Report.Dte"
+					"name": "Ais.Sar.Aircraft.Position.Report.Dte"
 				},
 				"Reserved": {
 					"bit_position": 241,
@@ -3106,7 +3106,7 @@
 					"comment": "reserved",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Ais.Sar.Aircraft.Position.Report.Reserved"
+					"name": "Ais.Sar.Aircraft.Position.Report.Reserved"
 				}
 			}
 		},
@@ -3125,7 +3125,7 @@
 					"bit_position": 0,
 					"bit_size": 6,
 					"sign": 0,
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.A.Message.Id"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.A.Message.Id"
 				},
 				"Repeat.Indicator": {
 					"bit_position": 6,
@@ -3138,7 +3138,7 @@
 						"Second retransmission": [2],
 						"Final retransmission": [3]
 					},
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.A.Repeat.Indicator"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.A.Repeat.Indicator"
 				},
 				"User.Id": {
 					"bit_position": 8,
@@ -3147,14 +3147,14 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"MMSI",
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.A.User.Id"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.A.User.Id"
 				},
 				"Name": {
 					"bit_position": 40,
 					"bit_size": 160,
 					"decoder": "decoder_t::decode_ascii",
 					"sign": 0,
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.A.Name"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.A.Name"
 				},
 				"Ais.Transceiver.Information": {
 					"bit_position": 200,
@@ -3169,7 +3169,7 @@
 						"Own information not broadcast": [4],
 						"Reserved": [5]
 					},
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.A.Ais.Transceiver.Information"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.A.Ais.Transceiver.Information"
 				},
 				"Reserved": {
 					"bit_position": 205,
@@ -3177,7 +3177,7 @@
 					"comment": "reserved",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.A.Reserved"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.A.Reserved"
 				},
 				"Sequence.Id": {
 					"bit_position": 208,
@@ -3185,7 +3185,7 @@
 					"factor": 1,
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.A.Sequence.Id"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.A.Sequence.Id"
 				}
 			}
 		},
@@ -3204,7 +3204,7 @@
 					"bit_position": 0,
 					"bit_size": 6,
 					"sign": 0,
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.B.Message.Id"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.B.Message.Id"
 				},
 				"Repeat.Indicator": {
 					"bit_position": 6,
@@ -3217,7 +3217,7 @@
 						"Second retransmission": [2],
 						"Final retransmission": [3]
 					},
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.B.Repeat.Indicator"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.B.Repeat.Indicator"
 				},
 				"User.Id": {
 					"bit_position": 8,
@@ -3226,7 +3226,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"MMSI",
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.B.User.Id"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.B.User.Id"
 				},
 				"Type.Of.Ship": {
 					"bit_position": 40,
@@ -3282,21 +3282,21 @@
 						"Other hazard cat D": [94],
 						"Other (no additional information)": [99]
 					},
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.B.Type.Of.Ship"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.B.Type.Of.Ship"
 				},
 				"Vendor.Id": {
 					"bit_position": 48,
 					"bit_size": 56,
 					"decoder": "decoder_t::decode_ascii",
 					"sign": 0,
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.B.Vendor.Id"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.B.Vendor.Id"
 				},
 				"Callsign": {
 					"bit_position": 104,
 					"bit_size": 56,
 					"decoder": "decoder_t::decode_ascii",
 					"sign": 0,
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.B.Callsign"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.B.Callsign"
 				},
 				"Length": {
 					"bit_position": 160,
@@ -3304,7 +3304,7 @@
 					"factor": 0.1,
 					"sign": 0,
 					"unit":"m",
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.B.Length"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.B.Length"
 				},
 				"Beam": {
 					"bit_position": 176,
@@ -3312,7 +3312,7 @@
 					"factor": 0.1,
 					"sign": 0,
 					"unit":"m",
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.B.Beam"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.B.Beam"
 				},
 				"Position.Reference.From.Starboard": {
 					"bit_position": 192,
@@ -3320,7 +3320,7 @@
 					"factor": 0.1,
 					"sign": 0,
 					"unit":"m",
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.B.Position.Reference.From.Starboard"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.B.Position.Reference.From.Starboard"
 				},
 				"Position.Reference.From.Bow": {
 					"bit_position": 208,
@@ -3328,7 +3328,7 @@
 					"factor": 0.1,
 					"sign": 0,
 					"unit":"m",
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.B.Position.Reference.From.Bow"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.B.Position.Reference.From.Bow"
 				},
 				"Mothership.User.Id": {
 					"bit_position": 224,
@@ -3338,7 +3338,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"MMSI",
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.B.Mothership.User.Id"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.B.Mothership.User.Id"
 				},
 				"Reserved": {
 					"bit_position": 256,
@@ -3346,7 +3346,7 @@
 					"comment": "reserved",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.B.Reserved"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.B.Reserved"
 				},
 				"Spare": {
 					"bit_position": 258,
@@ -3354,7 +3354,7 @@
 					"factor": 1,
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.B.Spare"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.B.Spare"
 				},
 				"Ais.Transceiver.Information": {
 					"bit_position": 264,
@@ -3369,7 +3369,7 @@
 						"Own information not broadcast": [4],
 						"Reserved": [5]
 					},
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.B.Ais.Transceiver.Information"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.B.Ais.Transceiver.Information"
 				},
 				"Reserved": {
 					"bit_position": 269,
@@ -3377,7 +3377,7 @@
 					"comment": "reserved",
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.B.Reserved"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.B.Reserved"
 				},
 				"Sequence.Id": {
 					"bit_position": 272,
@@ -3385,7 +3385,7 @@
 					"factor": 1,
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
-					"generic_name": "Ais.Class.BStatic.Data.Msg24.Part.B.Sequence.Id"
+					"name": "Ais.Class.BStatic.Data.Msg24.Part.B.Sequence.Id"
 				}
 			}
 		},
@@ -3404,7 +3404,7 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Wind.Data.Sid"
+					"name": "Wind.Data.Sid"
 				},
 				"Wind.Speed": {
 					"bit_position": 8,
@@ -3412,7 +3412,7 @@
 					"factor": 0.01,
 					"sign": 0,
 					"unit":"m/s",
-					"generic_name": "Wind.Data.Wind.Speed"
+					"name": "Wind.Data.Wind.Speed"
 				},
 				"Wind.Angle": {
 					"bit_position": 24,
@@ -3420,7 +3420,7 @@
 					"factor": 0.0001,
 					"sign": 0,
 					"unit":"rad",
-					"generic_name": "Wind.Data.Wind.Angle"
+					"name": "Wind.Data.Wind.Angle"
 				},
 				"Reference": {
 					"bit_position": 40,
@@ -3434,14 +3434,14 @@
 						"True (boat referenced)": [3],
 						"True (water referenced)": [4]
 					},
-					"generic_name": "Wind.Data.Reference"
+					"name": "Wind.Data.Reference"
 				},
 				"Reserved": {
 					"bit_position": 43,
 					"bit_size": 21,
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Wind.Data.Reserved"
+					"name": "Wind.Data.Reserved"
 				}
 			}
 		},
@@ -3460,7 +3460,7 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Environmental.130310.Parameters.Sid"
+					"name": "Environmental.130310.Parameters.Sid"
 				},
 				"Water.Temperature": {
 					"bit_position": 8,
@@ -3469,7 +3469,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"K",
-					"generic_name": "Environmental.130310.Parameters.Water.Temperature"
+					"name": "Environmental.130310.Parameters.Water.Temperature"
 				},
 				"Outside.Ambient.Air.Temperature": {
 					"bit_position": 24,
@@ -3478,7 +3478,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"K",
-					"generic_name": "Environmental.130310.Parameters.Outside.Ambient.Air.Temperature"
+					"name": "Environmental.130310.Parameters.Outside.Ambient.Air.Temperature"
 				},
 				"Atmospheric.Pressure": {
 					"bit_position": 40,
@@ -3486,14 +3486,14 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"hPa",
-					"generic_name": "Environmental.130310.Parameters.Atmospheric.Pressure"
+					"name": "Environmental.130310.Parameters.Atmospheric.Pressure"
 				},
 				"Reserved": {
 					"bit_position": 56,
 					"bit_size": 8,
 					"decoder": "decoder_t::decode_bytes",
 					"sign": 0,
-					"generic_name": "Environmental.130310.Parameters.Reserved"
+					"name": "Environmental.130310.Parameters.Reserved"
 				}
 			}
 		},
@@ -3512,7 +3512,7 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Environmental.130311.Parameters.Sid"
+					"name": "Environmental.130311.Parameters.Sid"
 				},
 				"Temperature.Source": {
 					"bit_position": 8,
@@ -3536,7 +3536,7 @@
 						"Freezer Temperature": [13],
 						"Exhaust Gas Temperature": [14]
 					},
-					"generic_name": "Environmental.130311.Parameters.Temperature.Source"
+					"name": "Environmental.130311.Parameters.Temperature.Source"
 				},
 				"Humidity.Source": {
 					"bit_position": 14,
@@ -3547,7 +3547,7 @@
 						"Inside": [0],
 						"Outside": [1]
 					},
-					"generic_name": "Environmental.130311.Parameters.Humidity.Source"
+					"name": "Environmental.130311.Parameters.Humidity.Source"
 				},
 				"Temperature": {
 					"bit_position": 16,
@@ -3556,7 +3556,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"K",
-					"generic_name": "Environmental.130311.Parameters.Temperature"
+					"name": "Environmental.130311.Parameters.Temperature"
 				},
 				"Humidity": {
 					"bit_position": 32,
@@ -3564,7 +3564,7 @@
 					"factor": 0.004,
 					"sign": 2,
 					"unit":"%",
-					"generic_name": "Environmental.130311.Parameters.Humidity"
+					"name": "Environmental.130311.Parameters.Humidity"
 				},
 				"Atmospheric.Pressure": {
 					"bit_position": 48,
@@ -3572,7 +3572,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"hPa",
-					"generic_name": "Environmental.130311.Parameters.Atmospheric.Pressure"
+					"name": "Environmental.130311.Parameters.Atmospheric.Pressure"
 				}
 			}
 		},
@@ -3591,13 +3591,13 @@
 					"bit_position": 0,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Temperature.Sid"
+					"name": "Temperature.Sid"
 				},
 				"Instance": {
 					"bit_position": 8,
 					"bit_size": 8,
 					"sign": 0,
-					"generic_name": "Temperature.Instance"
+					"name": "Temperature.Instance"
 				},
 				"Source": {
 					"bit_position": 16,
@@ -3621,7 +3621,7 @@
 						"Freezer Temperature": [13],
 						"Exhaust Gas Temperature": [14]
 					},
-					"generic_name": "Temperature.Source"
+					"name": "Temperature.Source"
 				},
 				"Actual.Temperature": {
 					"bit_position": 24,
@@ -3630,7 +3630,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"K",
-					"generic_name": "Temperature.Actual.Temperature"
+					"name": "Temperature.Actual.Temperature"
 				},
 				"Set.Temperature": {
 					"bit_position": 40,
@@ -3639,7 +3639,7 @@
 					"decoder": "decoder_t::decode_noop",
 					"sign": 0,
 					"unit":"K",
-					"generic_name": "Temperature.Set.Temperature"
+					"name": "Temperature.Set.Temperature"
 				}
 			}
 		}

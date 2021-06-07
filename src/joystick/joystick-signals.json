@@ -12,7 +12,7 @@
 			"is_j1939" : false,
 			"signals": {
 				"Joystick_button": {
-					"generic_name": "joystick.button",
+					"name": "joystick.button",
 					"bit_position": 48,
 					"bit_size": 8,
 					"factor": 1,
@@ -20,7 +20,7 @@
 					"decoder": "decoder_t::decode_boolean"
 				},
 				"Joystick_axe_y": {
-					"generic_name": "joystick.axe.y",
+					"name": "joystick.axe.y",
 					"bit_position": 0,
 					"bit_size": 16,
 					"factor": 1,
@@ -28,7 +28,7 @@
 					"sign": 3
 				},
 				"Joystick_axe_x": {
-					"generic_name": "joystick.axe.x",
+					"name": "joystick.axe.x",
 					"bit_position": 16,
 					"bit_size": 16,
 					"factor": 1,
@@ -36,7 +36,7 @@
 					"sign": 3
 				},
 				"Joystick_rotate": {
-					"generic_name": "joystick.axe.z",
+					"name": "joystick.axe.z",
 					"bit_position": 32,
 					"bit_size": 16,
 					"factor": 1,
