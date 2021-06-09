@@ -146,7 +146,7 @@ public:
                 {
                     valid = false;
                 }
-                tmp.insert(std::pair<std::string, openxc_DynamicField>(sig->get_generic_name(), dynamicField_tmp));
+                tmp.insert(std::pair<std::string, openxc_DynamicField>(sig->get_name(), dynamicField_tmp));
             }
             if (valid)
             {
