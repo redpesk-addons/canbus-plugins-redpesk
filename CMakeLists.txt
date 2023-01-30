@@ -59,19 +59,10 @@ list (APPEND link_libraries -pthread)
 
 add_subdirectory("etc")
 
-pkg_check_modules(lowcan REQUIRED canbus-binding)
-pkg_check_modules(helpers REQUIRED afb-libhelpers)
-pkg_check_modules(controller REQUIRED afb-libcontroller)
-
-include_directories("${lowcan_INCLUDEDIR}")
-include_directories("${helpers_INCLUDEDIR}")
-include_directories("${controller_INCLUDEDIR}")
-
-link_libraries(canbus ${lowcan_LIBRARIES} -L${lowcan_LIBDIR})
-
-link_libraries(${helpers_LIBRARIES} -L${helpers_LIBDIR})
-
-link_libraries(${controller_LIBRARIES} -L${controller_LIBDIR})
+pkg_check_modules(deps REQUIRED canbus-binding afb-libhelpers afb-libcontroller afb-binding)
+add_compile_options(${deps_CFLAGS})
+add_link_options(${deps_LDLAGS})
+link_libraries(canbus)
 
 file(GLOB plugin_dirs LIST_DIRECTORIES true src/*)
 
