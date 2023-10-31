@@ -43,6 +43,7 @@ include(CTest)
 enable_testing()
 
 set(CAN_LOW_LEVEL_BINDING_NAME "canbus-binding" CACHE STRING "Name of the CAN low level binding. Needed to install the config and plugin at the correct place")
+set(AFM_APP_DIR ${CMAKE_INSTALL_PREFIX}/redpesk CACHE PATH "Application directory of redpesk")
 
 # Compilation Mode (DEBUG, RELEASE)
 # ----------------------------------
@@ -81,8 +82,8 @@ foreach(target ${TARGETS_LIST})
 	message("=== Including plugin: '${target}'")
 	# Create the dedicated install targets
 	add_custom_target(install_${target}
-		COMMAND install -d \${DESTDIR}${CMAKE_INSTALL_PREFIX}/${CAN_LOW_LEVEL_BINDING_NAME}/lib/plugins
-		COMMAND install ${bdir}/${pre}${out}${suf} \${DESTDIR}${CMAKE_INSTALL_PREFIX}/${CAN_LOW_LEVEL_BINDING_NAME}/lib/plugins
+		COMMAND install -d \${DESTDIR}${AFM_APP_DIR}/${CAN_LOW_LEVEL_BINDING_NAME}/lib/plugins
+		COMMAND install ${bdir}/${pre}${out}${suf} \${DESTDIR}${AFM_APP_DIR}/${CAN_LOW_LEVEL_BINDING_NAME}/lib/plugins
 		COMMAND
 	)
 	add_dependencies(install_${target} ${target})
