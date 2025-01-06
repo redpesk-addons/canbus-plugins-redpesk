@@ -1,7 +1,7 @@
 #######################################################################
-# Copyright (C) 2019-2020 IoT.bzh Company
+# Copyright (C) 2019-2025 IoT.bzh Company
 # Contact: https://www.iot.bzh/licensing
-# Author : Romain Forlot <romain.forlot@iot.bzh>
+# Author: : Romain Forlot <romain.forlot@iot.bzh>
 #
 # This file is part of the canbus-plugins-redpesk of the RedPesk project.
 #
